@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prajwal M M - Cloud & Software Engineer, MCA in Storage & Cloud Technology. Specialized in AWS Serverless, Full-Stack Development, and Scalable Cloud Architectures.">
+  <meta name="keywords" content="Prajwal M M, Cloud Engineer, AWS, Serverless, Python, Java, JavaScript, DynamoDB, Lambda, Bengaluru, Portfolio">
+  <meta name="author" content="Prajwal M M">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Prajwal M M | Cloud & Software Engineer">
+  <meta property="og:description" content="Portfolio of Prajwal M M - Cloud Solutions, Serverless Architectures, and Full-Stack Engineering.">
+  <meta property="og:type" content="website">
+
+  <title>Prajwal M M | Cloud & Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for crisp UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Prajwal M M Home">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Prajwal</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-highlight">dev</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Journey</a></li>
+          <li class="nav-item"><a href="#terminal" class="nav-link"><i class="fa-solid fa-terminal"></i> Terminal</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle light and dark theme" title="Switch Theme">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <!-- Resume View Button in Nav -->
+        <button id="nav-resume-btn" class="btn btn-outline btn-sm nav-resume-btn" aria-label="View Resume">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Resume</span>
+        </button>
+
+        <!-- Hire Me Action Button -->
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">
+          <span>Hire Me</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburger" class="hamburger-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Live Status Badge -->
+          <div class="status-badge" data-reveal="fade-up">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Cloud & Software Engineering Roles</span>
+          </div>
+
+          <!-- Main Hero Heading -->
+          <h1 class="hero-title" data-reveal="fade-up" data-delay="100">
+            Hi, I'm <span class="gradient-text">Prajwal M M</span>
+          </h1>
+
+          <!-- Typewriter Role Subtitle -->
+          <h2 class="hero-subtitle" data-reveal="fade-up" data-delay="200">
+            I am a <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+          </h2>
+
+          <!-- Hero Bio Paragraph -->
+          <p class="hero-description" data-reveal="fade-up" data-delay="300">
+            Motivated <strong>MCA Storage & Cloud</strong> scholar &amp; <strong>AWS Cloud Intern @ CodeTech</strong> architecting serverless data pipelines, automated CI/CD workflows, and Infrastructure as Code using <strong>AWS CDK &amp; Terraform</strong>.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions" data-reveal="fade-up" data-delay="400">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Get In Touch</span>
+            </a>
+            <button id="hero-resume-btn" class="btn btn-outline">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>View Resume</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links & Info -->
+          <div class="hero-socials" data-reveal="fade-up" data-delay="500">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:prajwalmm2008@gmail.com" class="social-link" title="Email Prajwal">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <a href="tel:+919901155311" class="social-link" title="Call Prajwal">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <span class="hero-location-tag">
+              <i class="fa-solid fa-location-dot"></i> Bengaluru, India
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Cloud Architecture Graphic -->
+        <div class="hero-visual" data-reveal="fade-left" data-delay="300">
+          <div class="cloud-card-preview">
+            <div class="card-glow-border"></div>
+            <div class="card-header-bar">
+              <div class="window-controls">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="window-title"><i class="fa-brands fa-aws"></i> aws-architecture.json</div>
+              <div class="live-tag">LIVE</div>
+            </div>
+            
+            <div class="code-preview-body">
+              <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">engineer</span> = {</div>
+              <div class="code-line indent-1"><span class="code-key">name</span>: <span class="code-string">"Prajwal M M"</span>,</div>
+              <div class="code-line indent-1"><span class="code-key">experience</span>: <span class="code-string">"AWS Cloud Intern @ CodeTech"</span>,</div>
+              <div class="code-line indent-1"><span class="code-key">education</span>: <span class="code-string">"MCA (Storage &amp; Cloud Tech) 2025–2027"</span>,</div>
+              <div class="code-line indent-1"><span class="code-key">cloud</span>: <span class="code-string">"AWS (Lambda, S3, API GW, CloudFront, VPC)"</span>,</div>
+              <div class="code-line indent-1"><span class="code-key">devOps_IaC</span>: [<span class="code-string">"Terraform"</span>, <span class="code-string">"AWS CDK"</span>, <span class="code-string">"Docker"</span>, <span class="code-string">"CI/CD"</span>],</div>
+              <div class="code-line indent-1"><span class="code-key">certifications</span>: [<span class="code-string">"AWS Architecture"</span>, <span class="code-string">"Microservices &amp; CI/CD"</span>],</div>
+              <div class="code-line indent-1"><span class="code-key">status</span>: <span class="code-string">"Ready to Deploy 🚀"</span></div>
+              <div class="code-line">};</div>
+              <div class="code-line"><span class="code-function">deployProduction</span>(<span class="code-variable">engineer</span>);</div>
+            </div>
+
+            <!-- Floating Architecture Pills -->
+            <div class="floating-pill pill-aws">
+              <i class="fa-brands fa-aws"></i> AWS Certified (x2)
+            </div>
+            <div class="floating-pill pill-serverless">
+              <i class="fa-solid fa-bolt"></i> Serverless &amp; CDK
+            </div>
+            <div class="floating-pill pill-fullstack">
+              <i class="fa-solid fa-cubes"></i> Docker &amp; CI/CD
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="metrics-strip">
+        <div class="metrics-container">
+          <div class="metric-item">
+            <div class="metric-icon"><i class="fa-brands fa-aws"></i></div>
+            <div class="metric-info">
+              <span class="metric-value">AWS</span>
+              <span class="metric-label">Certified Architecture</span>
+            </div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-icon"><i class="fa-solid fa-cloud"></i></div>
+            <div class="metric-info">
+              <span class="metric-value">Serverless</span>
+              <span class="metric-label">Lambda & DynamoDB</span>
+            </div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="metric-info">
+              <span class="metric-value">MCA</span>
+              <span class="metric-label">Storage & Cloud Specialization</span>
+            </div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-icon"><i class="fa-solid fa-infinity"></i></div>
+            <div class="metric-info">
+              <span class="metric-value">CI/CD</span>
+              <span class="metric-label">GitHub Actions & OIDC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-id-card"></i> Profile</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Passionate about architecting cloud infrastructure, serverless backends, and robust software solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Story & Background -->
+          <div class="about-card story-card" data-reveal="fade-right">
+            <div class="card-top-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3 class="about-card-title">Cloud &amp; DevOps Specialist</h3>
+            <p class="about-text">
+              I am a motivated <strong>Master of Computer Applications (MCA)</strong> scholar specializing in <strong>Storage and Cloud Technology</strong> (2025 – 2027) at JAIN (Deemed-to-be University), Bengaluru, having graduated with a Bachelor of Computer Applications (BCA, 2022 – 2025).
+            </p>
+            <p class="about-text">
+              As an <strong>AWS Cloud Intern at CodeTech (2026)</strong>, I build and deploy cloud-native projects involving serverless data pipelines, Lambda-based image processing, automated CI/CD workflows, and Infrastructure as Code using <strong>AWS CDK and Terraform</strong>.
+            </p>
+            <p class="about-text">
+              Familiar with <strong>Docker, Docker Compose, Jenkins, Linux fundamentals, and containerization</strong>, I am passionate about cloud infrastructure, deployment automation, monitoring, and troubleshooting — eager to contribute to reliable, scalable, and secure distributed software.
+            </p>
+
+            <!-- Quick Info Tags -->
+            <div class="info-badges-list">
+              <div class="info-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="info-title">Location</span>
+                  <span class="info-detail">Bengaluru, Karnataka, India</span>
+                </div>
+              </div>
+              <div class="info-badge">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="info-title">Email</span>
+                  <span class="info-detail copyable" data-copy="prajwalmm2008@gmail.com" title="Click to copy">
+                    prajwalmm2008@gmail.com <i class="fa-regular fa-copy"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="info-badge">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span class="info-title">Phone</span>
+                  <span class="info-detail copyable" data-copy="+919901155311" title="Click to copy">
+                    +91 9901155311 <i class="fa-regular fa-copy"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Core Strengths Pillars -->
+          <div class="strengths-column" data-reveal="fade-left">
+            <div class="strength-card">
+              <div class="strength-icon-box bg-aws">
+                <i class="fa-brands fa-aws"></i>
+              </div>
+              <div class="strength-content">
+                <h4>AWS Cloud &amp; Serverless Solutions</h4>
+                <p>Expertise in Lambda, S3, API Gateway, DynamoDB, IAM, CloudFront, EC2, Load Balancers, VPC, SQS, SNS, and Cognito.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon-box bg-serverless">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+              <div class="strength-content">
+                <h4>Containers &amp; Orchestration</h4>
+                <p>Hands-on containerization and environment isolation using Docker, Docker Compose, and foundational Kubernetes clusters.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon-box bg-devops">
+                <i class="fa-solid fa-code-merge"></i>
+              </div>
+              <div class="strength-content">
+                <h4>CI/CD Automation &amp; IaC</h4>
+                <p>Automated deployment pipelines with GitHub Actions and Jenkins, alongside declarative Infrastructure as Code using Terraform and AWS CDK.</p>
+              </div>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon-box bg-fullstack">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="strength-content">
+                <h4>Full-Stack &amp; Web Technologies</h4>
+                <p>Developing dynamic, accessible web frontends using Python, React, Next.js, and Tailwind CSS backed by serverless cloud APIs and Firebase.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TECH STACK SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-cubes"></i> Expertise</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">A comprehensive toolkit spanning cloud architecture, programming, web systems, and databases.</p>
+        </div>
+
+        <!-- Skill Filter Tabs -->
+        <div class="skills-filter-tabs" data-reveal="fade-up">
+          <button class="filter-tab active" data-filter="all">All Skills</button>
+          <button class="filter-tab" data-filter="cloud">Cloud &amp; AWS</button>
+          <button class="filter-tab" data-filter="devops">DevOps &amp; IaC</button>
+          <button class="filter-tab" data-filter="containers">Containers</button>
+          <button class="filter-tab" data-filter="programming">Languages &amp; Web</button>
+          <button class="filter-tab" data-filter="database">Databases &amp; CS</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Cloud & AWS Card -->
+          <div class="skill-category-card" data-category="cloud" data-reveal="fade-up">
+            <div class="category-header">
+              <div class="category-icon aws-glow"><i class="fa-brands fa-aws"></i></div>
+              <div>
+                <h3 class="category-title">Cloud Platform: AWS</h3>
+                <span class="category-count">12 Core Services</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-solid fa-bolt"></i> AWS Lambda</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-cube"></i> Amazon S3</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-network-wired"></i> API Gateway</div>
+              <div class="skill-pill"><i class="fa-solid fa-server"></i> Amazon EC2</div>
+              <div class="skill-pill"><i class="fa-solid fa-shield-halved"></i> AWS IAM</div>
+              <div class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Amazon VPC</div>
+              <div class="skill-pill"><i class="fa-solid fa-scale-balanced"></i> Load Balancer</div>
+              <div class="skill-pill"><i class="fa-solid fa-globe"></i> CloudFront</div>
+              <div class="skill-pill"><i class="fa-solid fa-chart-line"></i> Amazon CloudWatch</div>
+              <div class="skill-pill"><i class="fa-solid fa-user-shield"></i> Amazon Cognito</div>
+              <div class="skill-pill"><i class="fa-solid fa-layer-group"></i> Amazon SQS</div>
+              <div class="skill-pill"><i class="fa-solid fa-bullhorn"></i> Amazon SNS</div>
+            </div>
+          </div>
+
+          <!-- DevOps & CI/CD Card -->
+          <div class="skill-category-card" data-category="devops" data-reveal="fade-up" data-delay="100">
+            <div class="category-header">
+              <div class="category-icon lang-glow"><i class="fa-solid fa-infinity"></i></div>
+              <div>
+                <h3 class="category-title">DevOps &amp; CI/CD</h3>
+                <span class="category-count">Automation &amp; Pipelines</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-brands fa-github"></i> GitHub Actions</div>
+              <div class="skill-pill highlight"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
+              <div class="skill-pill highlight"><i class="fa-brands fa-jenkins"></i> Jenkins (Foundational)</div>
+              <div class="skill-pill"><i class="fa-solid fa-code-branch"></i> CI/CD Pipelines</div>
+              <div class="skill-pill"><i class="fa-solid fa-shield-virus"></i> AWS OIDC Federation</div>
+            </div>
+          </div>
+
+          <!-- Containers & Orchestration Card -->
+          <div class="skill-category-card" data-category="containers" data-reveal="fade-up" data-delay="150">
+            <div class="category-header">
+              <div class="category-icon tools-glow"><i class="fa-brands fa-docker"></i></div>
+              <div>
+                <h3 class="category-title">Containers &amp; Orchestration</h3>
+                <span class="category-count">Container Ecosystem</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-brands fa-docker"></i> Docker</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-boxes-stacked"></i> Docker Compose</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-dharmachakra"></i> Kubernetes (Basic)</div>
+              <div class="skill-pill"><i class="fa-solid fa-cubes"></i> Containerization Concepts</div>
+            </div>
+          </div>
+
+          <!-- Infrastructure as Code (IaC) Card -->
+          <div class="skill-category-card" data-category="devops" data-reveal="fade-up" data-delay="200">
+            <div class="category-header">
+              <div class="category-icon web-glow"><i class="fa-solid fa-code-merge"></i></div>
+              <div>
+                <h3 class="category-title">Infrastructure as Code (IaC)</h3>
+                <span class="category-count">Declarative Cloud</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-solid fa-cubes"></i> Terraform</div>
+              <div class="skill-pill highlight"><i class="fa-brands fa-aws"></i> AWS CDK</div>
+              <div class="skill-pill"><i class="fa-solid fa-layer-group"></i> CloudFormation Synth</div>
+              <div class="skill-pill"><i class="fa-solid fa-file-code"></i> Immutable Infrastructure</div>
+            </div>
+          </div>
+
+          <!-- Programming Languages & Web Technologies Card -->
+          <div class="skill-category-card" data-category="programming" data-reveal="fade-up" data-delay="250">
+            <div class="category-header">
+              <div class="category-icon lang-glow"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <h3 class="category-title">Programming &amp; Web</h3>
+                <span class="category-count">Development Stack</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-brands fa-python"></i> Python</div>
+              <div class="skill-pill highlight"><i class="fa-brands fa-react"></i> React.js</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+              <div class="skill-pill"><i class="fa-solid fa-n"></i> Next.js</div>
+              <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+              <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</div>
+              <div class="skill-pill"><i class="fa-solid fa-network-wired"></i> RESTful APIs</div>
+            </div>
+          </div>
+
+          <!-- Databases & Storage Card -->
+          <div class="skill-category-card" data-category="database" data-reveal="fade-up" data-delay="300">
+            <div class="category-header">
+              <div class="category-icon db-glow"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h3 class="category-title">Database &amp; Storage</h3>
+                <span class="category-count">SQL &amp; Cloud Stores</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-solid fa-database"></i> SQL (Relational)</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-fire"></i> Firebase</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-table-cells"></i> Amazon DynamoDB</div>
+              <div class="skill-pill"><i class="fa-solid fa-hard-drive"></i> Cloud Object Storage (S3)</div>
+            </div>
+          </div>
+
+
+          <!-- Core Computer Science Card -->
+          <div class="skill-category-card" data-category="database" data-reveal="fade-up" data-delay="350">
+            <div class="category-header">
+              <div class="category-icon core-glow"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3 class="category-title">Core Concepts</h3>
+                <span class="category-count">CS Foundations</span>
+              </div>
+            </div>
+            <div class="skills-tag-cloud">
+              <div class="skill-pill highlight"><i class="fa-solid fa-sitemap"></i> Data Structures &amp; Algorithms</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-cloud"></i> Cloud Computing</div>
+              <div class="skill-pill highlight"><i class="fa-solid fa-network-wired"></i> Serverless Architecture</div>
+              <div class="skill-pill"><i class="fa-brands fa-linux"></i> Linux Fundamentals</div>
+              <div class="skill-pill"><i class="fa-solid fa-shield-halved"></i> Role-Based Access Control</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-laptop-code"></i> Portfolio</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Production-ready cloud architectures, AI bias mitigation tools, and full-stack solutions.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: CloudCart -->
+          <div class="project-card featured-highlight" data-reveal="fade-up">
+            <div class="project-card-banner">
+              <div class="project-badge"><i class="fa-brands fa-aws"></i> AWS Cloud & Serverless</div>
+              <div class="project-links-top">
+                <a href="#contact" class="proj-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#contact" class="proj-link-icon" title="Architecture Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">CloudCart — Serverless E-Commerce Platform</h3>
+              <p class="project-tagline">
+                High-availability, event-driven serverless e-commerce platform built natively on AWS with zero server management overhead.
+              </p>
+
+              <!-- Architecture Diagram Visual Box -->
+              <div class="project-arch-flow">
+                <div class="arch-node"><i class="fa-solid fa-globe"></i> CloudFront / S3</div>
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="arch-node"><i class="fa-solid fa-network-wired"></i> API Gateway</div>
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="arch-node"><i class="fa-solid fa-bolt"></i> Lambda</div>
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="arch-node"><i class="fa-solid fa-database"></i> DynamoDB</div>
+              </div>
+
+              <!-- Bullet Points from Resume -->
+              <ul class="project-features">
+                <li><i class="fa-solid fa-circle-check"></i> Developed responsive frontend supporting product browsing, search, dynamic cart, and role-based admin dashboard.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Built RESTful HTTP APIs with <strong>Amazon API Gateway</strong> and <strong>AWS Lambda</strong>, paired with <strong>Amazon DynamoDB</strong> for lightning-fast inventory indexing.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Integrated <strong>Amazon Cognito</strong> for secure token-based user authentication and administrative privilege control.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Deployed on <strong>Amazon S3 & CloudFront</strong> CDN for worldwide HTTPS edge caching and ultra-low latency.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Engineered a secure CI/CD pipeline using <strong>GitHub Actions and AWS OIDC</strong> for automated deployments and zero long-lived key storage.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Configured granular <strong>IAM roles</strong> and <strong>CloudWatch</strong> metrics/alarms for complete observability and auditing.</li>
+              </ul>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">Amazon DynamoDB</span>
+                <span class="tech-tag">API Gateway HTTP API</span>
+                <span class="tech-tag">Amazon Cognito</span>
+                <span class="tech-tag">S3 & CloudFront</span>
+                <span class="tech-tag">GitHub Actions CI/CD</span>
+                <span class="tech-tag">AWS OIDC</span>
+                <span class="tech-tag">CloudWatch</span>
+                <span class="tech-tag">JavaScript / HTML / CSS</span>
+              </div>
+
+              <!-- Deep Dive Modal Trigger -->
+              <div class="project-footer">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="cloudcart">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View System Deep-Dive
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Unbiased AI -->
+          <div class="project-card featured-highlight" data-reveal="fade-up" data-delay="150">
+            <div class="project-card-banner banner-ai">
+              <div class="project-badge badge-ai"><i class="fa-solid fa-brain"></i> AI Ethics & Full-Stack</div>
+              <div class="project-links-top">
+                <a href="#contact" class="proj-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#contact" class="proj-link-icon" title="Live Platform"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Unbiased AI — Bias Detection & Mitigation Platform</h3>
+              <p class="project-tagline">
+                Full-stack analytics suite designed to detect demographic bias in machine learning datasets and execute automated algorithmic mitigation.
+              </p>
+
+              <!-- Architecture Diagram Visual Box -->
+              <div class="project-arch-flow">
+                <div class="arch-node"><i class="fa-brands fa-react"></i> Next.js UI</div>
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="arch-node"><i class="fa-solid fa-filter"></i> Bias Engine</div>
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="arch-node"><i class="fa-solid fa-chart-pie"></i> Fairness Score</div>
+                <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="arch-node"><i class="fa-solid fa-fire"></i> Firebase Store</div>
+              </div>
+
+              <!-- Bullet Points from Resume -->
+              <ul class="project-features">
+                <li><i class="fa-solid fa-circle-check"></i> Built full-stack platform for detecting, analyzing, and mitigating bias across complex multi-dimensional datasets.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Implemented automated sensitive-attribute detection algorithms and statistical fairness scoring across demographic subsets.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Developed a dynamic bias mitigation engine to rebalance weights, reduce disparities, and enhance overall dataset fairness.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Integrated AI-driven insights, automated PDF/CSV audit reports generation, and clean processed dataset export pipelines.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Engineered real-time reactive UI with <strong>Next.js, React, Tailwind CSS</strong>, and <strong>Firebase Firestore</strong>.</li>
+              </ul>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Firebase Firestore</span>
+                <span class="tech-tag">AI Fairness Metrics</span>
+                <span class="tech-tag">Data Visualization</span>
+                <span class="tech-tag">JavaScript / Python</span>
+              </div>
+
+              <!-- Deep Dive Modal Trigger -->
+              <div class="project-footer">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="unbiased-ai">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View System Deep-Dive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section education-section" id="education">
+      <div class="section-container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-award"></i> Qualifications</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Academic rigor in Storage & Cloud systems complemented by industry-standard cloud certifications.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Education Timeline Column -->
+          <div class="timeline-column" data-reveal="fade-right">
+            <h3 class="column-heading"><i class="fa-solid fa-briefcase"></i> Experience &amp; Education</h3>
+
+            <div class="timeline-container">
+              <!-- Item 1: CodeTech AWS Cloud Intern -->
+              <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-card">
+                  <div class="timeline-badge-row">
+                    <span class="timeline-badge badge-current"><i class="fa-solid fa-briefcase"></i> Internship</span>
+                    <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2026</span>
+                  </div>
+                  <h4 class="degree-title">AWS Cloud Intern</h4>
+                  <p class="institution-name"><i class="fa-solid fa-building"></i> CodeTech</p>
+                  <div class="specialization-pill">
+                    <i class="fa-solid fa-cloud"></i> Focus: <strong>Serverless, IaC (AWS CDK), CI/CD Automation</strong>
+                  </div>
+                  <ul class="experience-bullet-list">
+                    <li>Built and deployed AWS projects involving serverless data pipelines, Lambda-based image processing, CI/CD automation, and Infrastructure as Code using AWS CDK.</li>
+                    <li>Worked with AWS Lambda, S3, API Gateway, DynamoDB, IAM, CloudFront, and CDK to design and deploy cloud-based solutions.</li>
+                    <li>Gained practical experience in serverless computing, cloud infrastructure, automation, and CI/CD.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2: MCA -->
+              <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-card">
+                  <div class="timeline-badge-row">
+                    <span class="timeline-badge badge-current">Pursuing</span>
+                    <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2025 – 2027</span>
+                  </div>
+                  <h4 class="degree-title">Master of Computer Applications (MCA)</h4>
+                  <p class="institution-name"><i class="fa-solid fa-building-columns"></i> JAIN (Deemed-to-be University), Bengaluru</p>
+                  <div class="specialization-pill">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Specialization: <strong>Storage, Cloud and Technology</strong>
+                  </div>
+                  <p class="degree-desc">
+                    In-depth advanced coursework covering Distributed Cloud Systems, Enterprise Storage Architecture, Virtualization, Database Management, High Availability, and Cloud Security.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3: BCA -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-badge-row">
+                    <span class="timeline-badge">Completed</span>
+                    <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2022 – 2025</span>
+                  </div>
+                  <h4 class="degree-title">Bachelor of Computer Applications (BCA)</h4>
+                  <p class="institution-name"><i class="fa-solid fa-building-columns"></i> JAIN (Deemed-to-be University), Bengaluru</p>
+                  <p class="degree-desc">
+                    Comprehensive study of Software Engineering, Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems, and Web Technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Spotlight Column -->
+          <div class="cert-column" data-reveal="fade-left">
+            <h3 class="column-heading"><i class="fa-solid fa-certificate"></i> Official Certifications</h3>
+
+            <!-- Cert 1: AWS Architecture -->
+            <div class="cert-card-showcase">
+              <div class="cert-badge-glow"></div>
+              <div class="cert-icon-large">
+                <i class="fa-brands fa-aws"></i>
+              </div>
+              <div class="cert-content">
+                <span class="cert-issuer">AWS Academy</span>
+                <h4 class="cert-title">AWS Architecture</h4>
+                <p class="cert-desc">
+                  Validated proficiency in designing resilient, high-performing, secure, and cost-optimized architectures on Amazon Web Services.
+                </p>
+
+                <div class="cert-pillars">
+                  <div class="pillar-tag"><i class="fa-solid fa-shield-check"></i> Security &amp; IAM</div>
+                  <div class="pillar-tag"><i class="fa-solid fa-arrows-up-down-left-right"></i> Elastic Scalability</div>
+                  <div class="pillar-tag"><i class="fa-solid fa-network-wired"></i> VPC &amp; Networking</div>
+                  <div class="pillar-tag"><i class="fa-solid fa-server"></i> Serverless Compute</div>
+                </div>
+
+                <div class="cert-verification-row">
+                  <span class="verified-indicator">
+                    <i class="fa-solid fa-circle-check"></i> Verified Credential
+                  </span>
+                  <span class="issuer-tag">AWS Academy Graduate</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 2: Microservices and CI/CD Pipeline Builder -->
+            <div class="cert-card-showcase cert-card-secondary" style="border-color: rgba(0, 229, 255, 0.3);">
+              <div class="cert-badge-glow" style="background: radial-gradient(circle, rgba(0, 229, 255, 0.2), transparent 70%);"></div>
+              <div class="cert-icon-large" style="color: var(--accent-cyan);">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div class="cert-content">
+                <span class="cert-issuer" style="color: var(--accent-cyan);">AWS Academy</span>
+                <h4 class="cert-title">Microservices and CI/CD Pipeline Builder</h4>
+                <p class="cert-desc">
+                  Proficiency in developing decoupled cloud microservices, containerization workflows, and automated continuous delivery pipelines on AWS.
+                </p>
+
+                <div class="cert-pillars">
+                  <div class="pillar-tag"><i class="fa-solid fa-cubes" style="color: var(--accent-cyan);"></i> Microservices</div>
+                  <div class="pillar-tag"><i class="fa-solid fa-code-branch" style="color: var(--accent-cyan);"></i> CI/CD Pipelines</div>
+                  <div class="pillar-tag"><i class="fa-brands fa-docker" style="color: var(--accent-cyan);"></i> Containerization</div>
+                  <div class="pillar-tag"><i class="fa-solid fa-cloud-arrow-up" style="color: var(--accent-cyan);"></i> Automated Deploy</div>
+                </div>
+
+                <div class="cert-verification-row">
+                  <span class="verified-indicator">
+                    <i class="fa-solid fa-circle-check"></i> Verified Credential
+                  </span>
+                  <span class="issuer-tag">AWS Academy Graduate</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus Areas Pill Box -->
+            <div class="cloud-focus-box">
+              <h4><i class="fa-solid fa-compass"></i> Engineering Principles I Follow</h4>
+              <ul class="principles-list">
+                <li><i class="fa-solid fa-check"></i> <strong>Well-Architected Framework:</strong> Operational excellence, security, reliability, performance, and cost optimization.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Infrastructure as Code &amp; Automation:</strong> Eliminating manual drift via automated CI/CD pipelines with Terraform &amp; AWS CDK.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Least Privilege Security:</strong> Fine-grained IAM policies, OIDC token exchanges, and encrypted datastores.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SIMULATOR SECTION -->
+    <section class="section terminal-section" id="terminal">
+      <div class="section-container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-terminal"></i> Interactive Shell</span>
+          <h2 class="section-title">Developer <span class="gradient-text">CLI Console</span></h2>
+          <p class="section-subtitle">Type commands in the interactive console below to query my resume, skills, and AWS architecture.</p>
+        </div>
+
+        <div class="terminal-wrapper" data-reveal="fade-up">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">prajwal@aws-cloud-instance: ~ (zsh)</div>
+            <div class="terminal-status"><span class="pulse-dot"></span> Online</div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output" id="terminal-output">
+              <div class="terminal-line banner-text">
+                =======================================================<br>
+                &nbsp;&nbsp;PRAJWAL M M - CLOUD &amp; DEVOPS ENGINEER CLI v3.0<br>
+                &nbsp;&nbsp;MCA (Storage &amp; Cloud) | AWS Cloud Intern @ CodeTech<br>
+                =======================================================<br>
+                Type <span class="cmd-highlight">'help'</span> to see all available commands.
+              </div>
+            </div>
+
+            <div class="terminal-prompt-line">
+              <span class="terminal-user">prajwal@cloud</span>:<span class="terminal-path">~</span>$ 
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. 'resume', 'experience', 'skills', 'cert')...">
+            </div>
+          </div>
+
+          <!-- Quick Command Chips for Mobile / Fast Click -->
+          <div class="quick-commands-bar">
+            <span class="quick-label">Quick Commands:</span>
+            <button class="cmd-chip" data-cmd="resume">resume</button>
+            <button class="cmd-chip" data-cmd="experience">experience</button>
+            <button class="cmd-chip" data-cmd="help">help</button>
+            <button class="cmd-chip" data-cmd="about">about</button>
+            <button class="cmd-chip" data-cmd="skills">skills</button>
+            <button class="cmd-chip" data-cmd="projects">projects</button>
+            <button class="cmd-chip" data-cmd="cert">cert</button>
+            <button class="cmd-chip" data-cmd="aws-status">aws-status</button>
+            <button class="cmd-chip" data-cmd="hire-prajwal">sudo hire-prajwal</button>
+            <button class="cmd-chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-envelope"></i> Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Looking for a Cloud Engineer, Backend Developer, or Full-Stack Builder? Let's discuss how I can add value.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Cards -->
+          <div class="contact-info-column" data-reveal="fade-right">
+            <!-- Email Card -->
+            <div class="contact-card">
+              <div class="contact-icon-box email-color">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-type">Email Address</span>
+                <a href="mailto:prajwalmm2008@gmail.com" class="contact-val">prajwalmm2008@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="prajwalmm2008@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+              <div class="contact-icon-box phone-color">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-type">Direct Phone / WhatsApp</span>
+                <a href="tel:+919901155311" class="contact-val">+91 9901155311</a>
+              </div>
+              <button class="copy-btn" data-copy="+919901155311" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-icon-box loc-color">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-type">Location & Availability</span>
+                <span class="contact-val">Bengaluru, Karnataka, India</span>
+                <span class="availability-sub"><i class="fa-solid fa-circle-check"></i> Open to Relocation / Hybrid / Remote</span>
+              </div>
+            </div>
+
+            <!-- Social Media Hub -->
+            <div class="social-hub-card">
+              <h4>Connect on Platforms</h4>
+              <div class="social-hub-buttons">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline hub-btn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline hub-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="mailto:prajwalmm2008@gmail.com" class="btn btn-outline hub-btn">
+                  <i class="fa-solid fa-paper-plane"></i> Direct Email
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-card" data-reveal="fade-left">
+            <h3 class="form-title"><i class="fa-solid fa-message"></i> Send Me a Message</h3>
+            <p class="form-subtitle">Fill out this quick form to send an inquiry or message directly to my inbox.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="req">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Alex Johnson">
+                  </div>
+                  <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email <span class="req">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" required placeholder="e.g. alex@example.com">
+                  </div>
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="subject" name="subject" required placeholder="e.g. Cloud Engineer Opportunity / Project Inquiry">
+                </div>
+                <span class="error-msg" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message Details <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                <span class="error-msg" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-bracket">&lt;</span>
+            <span class="brand-name">Prajwal</span>
+            <span class="brand-dot">.</span>
+            <span class="brand-highlight">dev</span>
+            <span class="brand-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">Architecting scalable cloud architectures & high performance full-stack systems.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education & Certs</a></li>
+            <li><a href="#terminal">Terminal</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Bengaluru, India</p>
+          <p><i class="fa-solid fa-envelope"></i> prajwalmm2008@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 9901155311</p>
+          <div class="footer-social-row">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:prajwalmm2008@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Prajwal M M. Built with semantic HTML5, CSS3 & vanilla JavaScript.</p>
+        <p class="footer-status"><i class="fa-solid fa-circle-check"></i> High Performance • Accessible • Zero Bloat</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- PROJECT DEEP-DIVE MODAL -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content" id="modal-content-body">
+        <!-- Content dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME VIEWER MODAL -->
+  <div class="modal-overlay resume-modal-overlay" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container resume-modal-container">
+      <div class="resume-modal-topbar">
+        <div class="resume-topbar-left">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Prajwal_M_M_Resume.pdf</span>
+        </div>
+        <div class="resume-topbar-actions">
+          <a href="Prajwal_M_M_Resume.pdf" download="Prajwal_M_M_Resume.pdf" class="btn btn-sm btn-primary resume-dl-btn" title="Download Official PDF">
+            <i class="fa-solid fa-download"></i> <span>Download PDF</span>
+          </a>
+          <button id="print-resume-btn" class="btn btn-sm btn-secondary" title="Print or Save as PDF">
+            <i class="fa-solid fa-print"></i> <span>Print / Save PDF</span>
+          </button>
+          <button id="copy-resume-btn" class="btn btn-sm btn-secondary" title="Copy Resume Text">
+            <i class="fa-solid fa-copy"></i> <span>Copy Text</span>
+          </button>
+          <button class="modal-close-btn resume-close-btn" id="resume-modal-close-btn" aria-label="Close resume viewer">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-document-wrapper">
+        <!-- Exact Official Clean Printable Resume Format -->
+        <article class="resume-document" id="printable-resume">
+          <!-- Resume Header -->
+          <header class="resume-doc-header">
+            <h1 class="resume-doc-name">PRAJWAL M M</h1>
+            <div class="resume-doc-contact">
+              <span>Bengaluru, India</span>
+              <span class="sep">|</span>
+              <a href="tel:+919901155311">+91 9901155311</a>
+              <span class="sep">|</span>
+              <a href="mailto:prajwalmm2008@gmail.com">prajwalmm2008@gmail.com</a>
+              <span class="sep">|</span>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <span class="sep">|</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </header>
+
+          <hr class="resume-divider">
+
+          <!-- Section: Professional Summary -->
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">PROFESSIONAL SUMMARY</h2>
+            <p class="resume-sec-text">
+              Motivated MCA student specializing in Storage and Cloud Technology with hands-on experience in AWS cloud solutions, serverless applications, Infrastructure as Code, and CI/CD automation. Familiar with Docker, Docker Compose, Jenkins, Linux fundamentals, and containerization concepts. Strong interest in DevOps, cloud infrastructure, deployment automation, monitoring, and troubleshooting. Eager to contribute to building reliable, scalable, and secure cloud-native applications.
+            </p>
+          </section>
+
+          <!-- Section: Education -->
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">EDUCATION</h2>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <div>
+                  <strong class="resume-entry-title">Master of Computer Applications (MCA) — Pursuing</strong>
+                  <div class="resume-subtext">JAIN (Deemed-to-be University), Bengaluru</div>
+                  <div class="resume-subtext">Specialization: Storage, Cloud and Technology</div>
+                </div>
+                <div class="resume-entry-meta">
+                  <span>2025 – 2027</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <div>
+                  <strong class="resume-entry-title">Bachelor of Computer Applications (BCA)</strong>
+                  <div class="resume-subtext">JAIN (Deemed-to-be University), Bengaluru</div>
+                </div>
+                <div class="resume-entry-meta">
+                  <span>2022 – 2025</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section: Technical Skills -->
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">TECHNICAL SKILLS</h2>
+            <ul class="resume-skills-list">
+              <li><strong>Programming Languages:</strong> Python</li>
+              <li><strong>Cloud Platform:</strong> AWS (EC2, S3, IAM, Lambda, API Gateway, Load Balancer, CloudFront, CloudWatch, VPC, SQS, SNS, Cognito)</li>
+              <li><strong>DevOps &amp; CI/CD:</strong> Git, GitHub, GitHub Actions, Jenkins (Foundational), CI/CD Pipelines</li>
+              <li><strong>Containers &amp; Orchestration:</strong> Docker, Docker Compose, Kubernetes (Basic)</li>
+              <li><strong>Infrastructure as Code (IaC):</strong> Terraform, AWS CDK</li>
+              <li><strong>Web Technologies:</strong> React, Tailwind CSS</li>
+              <li><strong>Database:</strong> SQL, Firebase</li>
+              <li><strong>Core Concepts:</strong> Data Structures &amp; Algorithms, Cloud Computing</li>
+            </ul>
+          </section>
+
+          <!-- Section: Experience -->
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">EXPERIENCE</h2>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <div>
+                  <strong class="resume-entry-title">CodeTech — AWS Cloud Intern</strong>
+                </div>
+                <div class="resume-entry-meta">
+                  <span>2026</span>
+                </div>
+              </div>
+              <ul class="resume-bullet-list" style="margin-top: 6px;">
+                <li>Built and deployed AWS projects involving serverless data pipelines, Lambda-based image processing, CI/CD automation, and Infrastructure as Code using AWS CDK.</li>
+                <li>Worked with AWS Lambda, S3, API Gateway, DynamoDB, IAM, CloudFront, and CDK to design and deploy cloud-based solutions.</li>
+                <li>Gained practical experience in serverless computing, cloud infrastructure, automation, and CI/CD.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section: Projects -->
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">PROJECTS</h2>
+
+            <!-- Project 1 -->
+            <div class="resume-project-item">
+              <div class="resume-project-head">
+                <strong class="resume-project-name">Unbiased AI — Bias Detection &amp; Mitigation Platform</strong>
+              </div>
+              <div class="resume-project-tech"><em>Next.js, React, Tailwind CSS, Firebase</em></div>
+              <ul class="resume-bullet-list">
+                <li>Built a full-stack platform for detecting, analyzing, and mitigating bias in datasets</li>
+                <li>Implemented automated sensitive-attribute detection and fairness scoring across demographic groups</li>
+                <li>Developed a bias mitigation engine to reduce disparities and improve dataset fairness</li>
+                <li>Integrated AI-powered insights, automated report generation, and processed dataset export</li>
+              </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="resume-project-item">
+              <div class="resume-project-head">
+                <strong class="resume-project-name">CloudCart — Serverless E-Commerce Platform</strong>
+              </div>
+              <div class="resume-project-tech"><em>AWS (S3, CloudFront, API Gateway HTTP API, Lambda, DynamoDB, Cognito, IAM, CloudWatch), GitHub Actions, HTML, CSS, JavaScript</em></div>
+              <ul class="resume-bullet-list">
+                <li>Developed a serverless e-commerce platform with a responsive frontend supporting product browsing, search, cart functionality, authentication, and role-based admin management</li>
+                <li>Built backend HTTP API endpoints using Amazon API Gateway HTTP API and AWS Lambda, integrating DynamoDB for product and inventory management</li>
+                <li>Implemented secure user authentication and role-based admin access using Amazon Cognito</li>
+                <li>Deployed the frontend using Amazon S3 and CloudFront for scalable content delivery and HTTPS access</li>
+                <li>Built a secure CI/CD pipeline using GitHub Actions and AWS OIDC to automatically deploy frontend changes to S3 and invalidate the CloudFront cache without storing long-lived AWS credentials</li>
+                <li>Configured IAM roles and CloudWatch logging/monitoring for secure AWS access, troubleshooting, and application observability</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section: Certifications -->
+          <section class="resume-doc-section">
+            <h2 class="resume-sec-title">CERTIFICATIONS</h2>
+            <ul class="resume-bullet-list">
+              <li><strong>AWS Architecture</strong> - AWS Academy</li>
+              <li><strong>Microservices and CI/CD Pipeline Builder</strong> - AWS Academy</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
