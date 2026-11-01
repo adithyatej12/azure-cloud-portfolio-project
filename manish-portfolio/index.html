@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish — Cloud & DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-backdrop"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">M<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#certs" data-section="certs">Certifications</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker">Final-year MCA · Cloud Computing & DevOps</p>
+    <h1 class="hero-name">Manish</h1>
+    <p class="hero-role">
+      I build and deploy things as a
+      <span class="type-target" id="typeTarget"></span><span class="cursor">&nbsp;</span>
+    </p>
+    <p class="hero-desc">
+      Bengaluru-based engineer preparing for cloud infrastructure roles — currently
+      shipping containerized apps, wiring up CI/CD pipelines, and studying how
+      AWS, GCP and Azure actually run at scale.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-graphic" aria-hidden="true">
+    <svg viewBox="0 0 400 400" class="node-svg" id="nodeSvg">
+      <line x1="200" y1="200" x2="80" y2="90" class="edge" />
+      <line x1="200" y1="200" x2="320" y2="110" class="edge" />
+      <line x1="200" y1="200" x2="90" y2="300" class="edge" />
+      <line x1="200" y1="200" x2="310" y2="290" class="edge" />
+      <line x1="200" y1="200" x2="200" y2="340" class="edge" />
+      <circle cx="200" cy="200" r="34" class="node node-core" />
+      <circle cx="80" cy="90" r="16" class="node" />
+      <circle cx="320" cy="110" r="16" class="node" />
+      <circle cx="90" cy="300" r="16" class="node" />
+      <circle cx="310" cy="290" r="16" class="node" />
+      <circle cx="200" cy="340" r="16" class="node" />
+    </svg>
+  </div>
+</header>
+
+<main>
+
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a final-year MCA student at Jain (Deemed-to-be) University, Bengaluru,
+        specializing in Cloud Computing and DevOps. Before this, I completed my BCA
+        with an 8.54 CGPA. I've worked as a Web Developer at AjoraDigital and as a
+        Cloud Solution Architect Intern at Innovate by HexaInd, where I got hands-on
+        with GCP infrastructure. Right now I'm working through a structured
+        cloud/DevOps roadmap and preparing for campus placements in November 2026.
+      </p>
+      <dl class="about-stats">
+        <div>
+          <dt>8.54</dt>
+          <dd>BCA CGPA</dd>
+        </div>
+        <div>
+          <dt>4</dt>
+          <dd>Cloud certifications</dd>
+        </div>
+        <div>
+          <dt>2</dt>
+          <dd>Internships completed</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Cloud Platforms</h3>
+        <div class="tag-row">
+          <span class="tag">AWS</span>
+          <span class="tag">Google Cloud</span>
+          <span class="tag">Azure</span>
+          <span class="tag">Oracle Cloud</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>DevOps & Tooling</h3>
+        <div class="tag-row">
+          <span class="tag">Docker</span>
+          <span class="tag">Nginx</span>
+          <span class="tag">Git & GitHub Actions</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Development</h3>
+        <div class="tag-row">
+          <span class="tag">Node.js / Express</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="section-index">03</span>
+      <h2>Projects</h2>
+    </div>
+    <div class="project-list">
+
+      <article class="project-card" tabindex="0">
+        <div class="project-main">
+          <h3>Dockerized Daily Standup Tracker</h3>
+          <p>
+            A containerized web app for logging daily standups — built with a
+            Node/Express backend, PostgreSQL for storage, and Nginx as a reverse
+            proxy, all orchestrated with Docker.
+          </p>
+        </div>
+        <div class="project-detail">
+          <p class="project-detail-label">Stack</p>
+          <div class="tag-row">
+            <span class="tag tag-sm">Node.js</span>
+            <span class="tag tag-sm">Express</span>
+            <span class="tag tag-sm">PostgreSQL</span>
+            <span class="tag tag-sm">Nginx</span>
+            <span class="tag tag-sm">Docker</span>
+          </div>
+        </div>
+        <span class="project-expand">View details</span>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <div class="project-main">
+          <h3>Cloud Infrastructure Labs</h3>
+          <p>
+            Hands-on labs from my AWS and GCP coursework and internship —
+            provisioning networks, IAM roles, and compute resources following
+            cloud architecture best practices.
+          </p>
+        </div>
+        <div class="project-detail">
+          <p class="project-detail-label">Stack</p>
+          <div class="tag-row">
+            <span class="tag tag-sm">AWS</span>
+            <span class="tag tag-sm">GCP</span>
+            <span class="tag tag-sm">IAM</span>
+            <span class="tag tag-sm">VPC</span>
+          </div>
+        </div>
+        <span class="project-expand">View details</span>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="certs" class="section">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2>Certifications</h2>
+    </div>
+    <ul class="cert-list">
+      <li>
+        <span class="cert-name">AWS Academy Cloud Architecting</span>
+        <span class="cert-issuer">Amazon Web Services</span>
+      </li>
+      <li>
+        <span class="cert-name">AWS Advanced Networking Specialty</span>
+        <span class="cert-issuer">Amazon Web Services</span>
+      </li>
+      <li>
+        <span class="cert-name">OCI Foundations</span>
+        <span class="cert-issuer">Oracle Cloud Infrastructure</span>
+      </li>
+      <li>
+        <span class="cert-name">AZ-900: Azure Fundamentals</span>
+        <span class="cert-issuer">Microsoft</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section section-contact">
+    <div class="section-head">
+      <span class="section-index">05</span>
+      <h2>Contact</h2>
+    </div>
+    <p class="contact-lead">
+      Open to Cloud and DevOps roles  Feel free to reach out.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:you@example.com" class="contact-link">manishyadav192004@gmail.com</a>
+      <a href="https://www.linkedin.com/in/manish-yadav-a1a280263/" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Sudo-su-wakeup" class="contact-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Built by Manish — deployed on Azure Static Web Apps.</p>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
