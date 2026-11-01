@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K S Sourav — Cloud & Storage Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="skip-link"><a href="#about">Skip to content</a></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#" class="mark">KS<span class="mark-dot">.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">MCA · Cloud & Storage Technology</p>
+        <h1>K S Sourav</h1>
+        <p class="hero-lede">
+          I build and configure cloud infrastructure — VPCs, load balancers, and storage
+          layers — currently deepening that with hands-on work across AWS and Microsoft Azure.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#projects">See the work</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Currently</dt><dd>Pursuing MCA, Cloud & Storage Tech</dd></div>
+          <div><dt>Based in</dt><dd>Bengaluru, Karnataka</dd></div>
+          <div><dt>Focus</dt><dd>AWS · Azure · Networking</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 420 380" id="archSvg">
+          <rect x="20" y="20" width="380" height="340" rx="4" class="vpc-box"/>
+          <text x="34" y="42" class="diagram-label">VPC · 10.0.0.0/16</text>
+
+          <rect x="44" y="70" width="150" height="110" rx="3" class="subnet-box"/>
+          <text x="56" y="88" class="diagram-label dim">public-subnet</text>
+
+          <rect x="226" y="70" width="150" height="110" rx="3" class="subnet-box"/>
+          <text x="238" y="88" class="diagram-label dim">private-subnet</text>
+
+          <rect x="44" y="230" width="332" height="90" rx="3" class="subnet-box"/>
+          <text x="56" y="248" class="diagram-label dim">storage layer</text>
+
+          <g class="node-group">
+            <circle cx="119" cy="130" r="22" class="node node-user"/>
+            <text x="119" y="135" class="node-label">User</text>
+          </g>
+          <g class="node-group">
+            <circle cx="301" cy="130" r="22" class="node node-alb"/>
+            <text x="301" y="135" class="node-label">ALB</text>
+          </g>
+          <g class="node-group">
+            <circle cx="301" cy="280" r="22" class="node node-ec2"/>
+            <text x="301" y="285" class="node-label">EC2</text>
+          </g>
+          <g class="node-group">
+            <circle cx="119" cy="280" r="22" class="node node-s3"/>
+            <text x="119" y="285" class="node-label">S3</text>
+          </g>
+
+          <path class="route" id="route1" d="M141 130 H279"/>
+          <path class="route" id="route2" d="M301 152 V258"/>
+          <path class="route" id="route3" d="M279 280 H141"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SUMMARY -->
+  <section class="section" id="summary">
+    <div class="wrap">
+      <p class="section-kicker">Summary</p>
+      <p class="prose">
+        I'm an MCA student specializing in Cloud and Storage Technology, with hands-on experience
+        configuring AWS services including EC2, S3, VPC, IAM, Application Load Balancer, Auto Scaling,
+        CloudFront, and AWS WAF. Through academic projects and internship work I've set up networking
+        components, storage solutions, access management, and basic cloud security — and I'm currently
+        strengthening my knowledge of Microsoft Azure, DevOps, and infrastructure automation.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <p class="section-kicker">Skills</p>
+      <h2>What I work with</h2>
+
+      <div class="skill-groups">
+
+        <div class="skill-box">
+          <h3>Cloud Platforms</h3>
+          <ul class="tags">
+            <li>AWS</li><li>Microsoft Azure</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Cloud Infrastructure</h3>
+          <ul class="tags">
+            <li>EC2</li><li>S3</li><li>VPC</li><li>IAM</li>
+            <li>Application Load Balancer</li><li>Auto Scaling</li>
+            <li>CloudFront</li><li>AWS WAF</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Networking</h3>
+          <ul class="tags">
+            <li>Public &amp; Private Subnets</li><li>Route Tables</li>
+            <li>Internet Gateway</li><li>NAT Gateway</li>
+            <li>Security Groups</li><li>DNS</li><li>TCP/IP</li><li>HTTP/HTTPS</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Programming &amp; Web</h3>
+          <ul class="tags">
+            <li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Node.js</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Databases</h3>
+          <ul class="tags">
+            <li>MongoDB</li><li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3>Working style</h3>
+          <ul class="tags">
+            <li>Problem solving</li><li>Troubleshooting</li><li>Teamwork</li>
+            <li>Communication</li><li>Adaptability</li><li>Time management</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / EXPERIENCE -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <p class="section-kicker">Experience &amp; Projects</p>
+      <h2>Hands-on cloud work</h2>
+      <p class="prose muted">
+        From my internship and academic work — real infrastructure I configured, not just concepts I read about.
+      </p>
+
+      <div class="project-list">
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>VPC &amp; Network Architecture</h3>
+            <span class="project-tag">Networking</span>
+          </div>
+          <p>
+            Designed and configured a custom VPC with public and private subnets, an Internet Gateway
+            and NAT Gateway for controlled outbound access, custom route tables, and security groups
+            to restrict traffic between tiers.
+          </p>
+          <ul class="stack-list">
+            <li>VPC</li><li>Subnets</li><li>Route Tables</li><li>NAT Gateway</li><li>Security Groups</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Load-Balanced Web Deployment</h3>
+            <span class="project-tag">Compute</span>
+          </div>
+          <p>
+            Deployed web servers on EC2 across multiple availability zones and placed them behind an
+            Application Load Balancer, with Auto Scaling configured to handle changing traffic load.
+          </p>
+          <ul class="stack-list">
+            <li>EC2</li><li>Application Load Balancer</li><li>Auto Scaling</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Storage, Access &amp; Edge Delivery</h3>
+            <span class="project-tag">Storage &amp; Security</span>
+          </div>
+          <p>
+            Set up S3 for application storage, IAM roles and policies for least-privilege access, and
+            CloudFront with AWS WAF in front of it for content delivery and basic edge-level protection.
+          </p>
+          <ul class="stack-list">
+            <li>S3</li><li>IAM</li><li>CloudFront</li><li>AWS WAF</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Cloud Technology Internship — Codtech IT Solutions</h3>
+            <span class="project-tag">Jun – Aug 2026</span>
+          </div>
+          <p>
+            Configured and deployed cloud infrastructure across AWS and Microsoft Azure, working
+            hands-on with EC2, VPC, subnets, gateways, route tables, security groups, and load
+            balancers — covering networking, storage, server deployment, and monitoring end to end.
+          </p>
+          <ul class="stack-list">
+            <li>AWS</li><li>Azure</li><li>EC2</li><li>VPC</li><li>Monitoring</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section alt" id="certs">
+    <div class="wrap">
+      <p class="section-kicker">Certifications &amp; Courses</p>
+      <h2>Learning, verified</h2>
+
+      <div class="cert-list">
+        <div class="cert-row">
+          <div class="cert-main">
+            <h3>AWS Cloud Developer</h3>
+            <p>AWS Academy</p>
+          </div>
+          <span class="cert-status status-done">Completed</span>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-main">
+            <h3>Data Analyst</h3>
+            <p>ExcelR</p>
+          </div>
+          <span class="cert-status status-done">Completed</span>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-main">
+            <h3>Microsoft Azure Fundamentals</h3>
+            <p>Currently building Azure &amp; DevOps skills</p>
+          </div>
+          <span class="cert-status status-progress">In progress</span>
+        </div>
+      </div>
+
+      <p class="prose muted cert-note">
+        Note: only certifications and courses listed on my résumé are shown here.
+        My AZ-900 and OCI credentials will be added as soon as they're completed.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2>Let's talk cloud infrastructure</h2>
+        <p class="prose">
+          Open to internships and entry-level roles in Cloud &amp; Storage Technology.
+          Reach out directly — I reply fast.
+        </p>
+      </div>
+      <div class="contact-card">
+        <a class="contact-line" href="mailto:Souravks650@gmail.com">
+          <span class="contact-label">Email</span>
+          <span>Souravks650@gmail.com</span>
+        </a>
+        <a class="contact-line" href="tel:+919633835621">
+          <span class="contact-label">Phone</span>
+          <span>+91 96338 35621</span>
+        </a>
+        <a class="contact-line" href="#" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span>https://github.com/kssourav650</span>
+        </a>
+        <a class="contact-line" href="#" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span>https://www.linkedin.com/in/k-s-sourav-548aa9434/</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> K S Sourav. Built with HTML, CSS &amp; JS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
