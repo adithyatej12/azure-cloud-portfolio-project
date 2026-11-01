@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="120px" height="90px" viewBox="0 0 120 90">
+  <g transform="translate(35, 20)">
+    <!-- Red diamond background -->
+    <rect x="5" y="5" width="40" height="40" rx="4" transform="rotate(45 25 25)" fill="#F05032"/>
+    <!-- Git Branch Line Work -->
+    <path d="M22,17 L22,33 M22,25 C27,25 28,22 30,20" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Nodes -->
+    <circle cx="22" cy="17" r="3.5" fill="#FFFFFF"/>
+    <circle cx="22" cy="33" r="3.5" fill="#FFFFFF"/>
+    <circle cx="30" cy="20" r="3.5" fill="#FFFFFF"/>
+  </g>
+</svg>

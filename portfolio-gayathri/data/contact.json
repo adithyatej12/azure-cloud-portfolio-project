@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Location",
+    "text": "Bengaluru, India",
+    "link": "https://www.google.com/maps/place/Bengaluru,+Karnataka,+India/",
+    "type": "location"
+  },
+  {
+    "title": "Phone",
+    "text": "+91 6363498706",
+    "link": "tel:+916363498706",
+    "type": "phone"
+  },
+  {
+    "title": "Email",
+    "text": "gayathrimgayathri4@gmail.com",
+    "link": "mailto:gayathrimgayathri4@gmail.com?subject=Message%20from%20your%20site",
+    "type": "email"
+  }
+]

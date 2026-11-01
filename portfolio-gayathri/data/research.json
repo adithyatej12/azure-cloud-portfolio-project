@@ -1,0 +1,12 @@
+[
+  {
+    "status": "Ongoing Research",
+    "title": "Cloud-Based Food Donation System for Waste Reduction & Hunger Relief",
+    "description": "Designing and prototyping a robust cloud platform for real-time food donation tracking, inventory management, and NGO coordination. Leveraging AWS services to ensure high availability, security, and scalable container deployment."
+  },
+  {
+    "status": "In Progress Research",
+    "title": "Hybrid Multimodal Plagiarism Detection System",
+    "description": "Developing an intelligent system that integrates OCR, TF-IDF vectorization, and Sentence-BERT embeddings. Focuses on detecting cross-modal plagiarism in both text documents and diagrams/images."
+  }
+]

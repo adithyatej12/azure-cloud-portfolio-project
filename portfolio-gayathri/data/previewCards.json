@@ -1,0 +1,26 @@
+[
+  {
+    "href": "/home-svg",
+    "img": "/img/demo/screens/svg-dark.webp",
+    "imgClass": "image-01",
+    "caption": "SVG Objects"
+  },
+  {
+    "href": "/home-image",
+    "img": "/img/demo/screens/image-dark.webp",
+    "imgClass": "image-02",
+    "caption": "Parallax Image"
+  },
+  {
+    "href": "/home-solid-color",
+    "img": "/img/demo/screens/solid-color-dark.webp",
+    "imgClass": "image-03",
+    "caption": "Solid Color"
+  },
+  {
+    "href": "/home-gradient",
+    "img": "/img/demo/screens/gradient-dark.webp",
+    "imgClass": "image-04",
+    "caption": "Animated Gradients"
+  }
+]

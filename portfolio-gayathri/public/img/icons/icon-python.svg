@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="120px" height="90px" viewBox="0 0 120 90" style="enable-background:new 0 0 120 90;">
+  <g transform="translate(10, 0)">
+    <!-- Blue Snake -->
+    <path fill="#3776AB" d="M50,10c-11.6,0-17.5,5-17.5,12.5v7.5h17.5v2.5h-25C16,32.5,10,38.5,10,50c0,11.6,6,17.5,15,17.5h7.5V60c0-8.3,6.7-15,15-15h17.5v-10c0-11.6-5.8-15-15-15C50,20,50,10,50,10z"/>
+    <!-- Yellow Snake -->
+    <path fill="#FFD43B" d="M50,80c11.6,0,17.5-5,17.5-12.5v-7.5H50v-2.5h25c9,0,15-6,15-17.5C90,28.4,84,22.5,75,22.5H67.5V30c0,8.3-6.7,15-15,15H35v10c0,11.6,5.8,15,15,15C50,70,50,80,50,80z"/>
+    <!-- Blue eye -->
+    <circle fill="#FFFFFF" cx="40" cy="17.5" r="2.5"/>
+    <!-- Yellow eye -->
+    <circle fill="#FFFFFF" cx="60" cy="72.5" r="2.5"/>
+  </g>
+</svg>

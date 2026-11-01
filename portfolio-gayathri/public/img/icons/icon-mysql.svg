@@ -1,0 +1,21 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="120px" height="90px" viewBox="0 0 120 90">
+  <g transform="translate(35, 12)">
+    <!-- Top Cylinder -->
+    <ellipse cx="25" cy="10" rx="25" ry="7" fill="#00758F" stroke="#005A70" stroke-width="2"/>
+    
+    <!-- Middle Cylinder -->
+    <path d="M0,10 L0,28 C0,35 50,35 50,28 L50,10 Z" fill="#005A70" stroke="#004354" stroke-width="2"/>
+    <ellipse cx="25" cy="10" rx="25" ry="7" fill="none" stroke="#00758F" stroke-width="2"/>
+    <ellipse cx="25" cy="28" rx="25" ry="7" fill="#005A70" stroke="#004354" stroke-width="2"/>
+
+    <!-- Bottom Cylinder -->
+    <path d="M0,28 L0,46 C0,53 50,53 50,46 L50,28 Z" fill="#004354" stroke="#002D3A" stroke-width="2"/>
+    <ellipse cx="25" cy="28" rx="25" ry="7" fill="none" stroke="#005A70" stroke-width="2"/>
+    <ellipse cx="25" cy="46" rx="25" ry="7" fill="#002D3A" stroke="#001B24" stroke-width="2"/>
+
+    <!-- Orange accent indicator dots -->
+    <circle cx="8" cy="10" r="2.5" fill="#F29111"/>
+    <circle cx="8" cy="28" r="2.5" fill="#F29111"/>
+    <circle cx="8" cy="46" r="2.5" fill="#F29111"/>
+  </g>
+</svg>
