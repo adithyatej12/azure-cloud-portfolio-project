@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megha Saha Portfolio</title>
+    <meta name="description" content="Portfolio of Megha Saha, a UI/UX designer building intuitive, accessible digital experiences that bridge design and technology." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="preload" as="video" href="/hero.mp4" />
+
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme')
+        document.documentElement.setAttribute('data-theme', stored === 'light' ? 'light' : 'dark')
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

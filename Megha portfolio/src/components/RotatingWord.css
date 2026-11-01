@@ -1,0 +1,20 @@
+.rotating-word {
+  display: inline-grid;
+  vertical-align: top;
+}
+
+.rotating-word__item {
+  grid-area: 1 / 1;
+  color: var(--hero-highlight, inherit);
+  font-weight: 500;
+  white-space: nowrap;
+  animation: word-in 0.45s var(--ease-out) both;
+}
+
+@keyframes word-in {
+  from { opacity: 0; transform: translateY(8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-word__item { animation: none; }
+}
