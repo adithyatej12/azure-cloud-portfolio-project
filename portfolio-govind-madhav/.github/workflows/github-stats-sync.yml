@@ -1,0 +1,51 @@
+name: Auto-Sync GitHub Stats (Every 4 Hours)
+
+on:
+  schedule:
+    # Triggers every 4 hours (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Allows manual run from GitHub Actions dashboard
+
+jobs:
+  sync-github-stats:
+    name: Sync GitHub Contributions & Streak
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Fetch GitHub Contributions
+        run: node scripts/fetch-contributions.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update GitHub GraphQL Stats Data
+        run: node scripts/update-github-data.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & Push Dataset Updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/github-contributions.json
+          if git diff --staged --quiet; then
+            echo "No contribution changes detected."
+          else
+            git commit -m "chore(stats): auto-sync github contributions dataset [skip ci]"
+            git push
+          fi

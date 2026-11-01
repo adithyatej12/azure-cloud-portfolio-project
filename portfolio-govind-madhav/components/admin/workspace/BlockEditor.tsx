@@ -1,0 +1,279 @@
+"use client";
+
+import { useEditor, EditorContent } from "@tiptap/react";
+import StarterKit from "@tiptap/starter-kit";
+import Placeholder from "@tiptap/extension-placeholder";
+import Link from "@tiptap/extension-link";
+import TaskList from "@tiptap/extension-task-list";
+import TaskItem from "@tiptap/extension-task-item";
+import CharacterCount from "@tiptap/extension-character-count";
+import Typography from "@tiptap/extension-typography";
+import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
+import { common, createLowlight } from "lowlight";
+
+import CalloutNode from "./CalloutNode";
+import LinkPreviewNode from "./LinkPreviewNode";
+import SlashCommandExtension from "./SlashCommandExtension";
+import React, { useEffect, useState, useRef, useCallback } from "react";
+import { cn } from "@/lib/utils";
+import {
+  FiFileText,
+  FiType,
+  FiList,
+  FiCheckSquare,
+  FiCode,
+  FiMessageSquare,
+  FiMinus,
+  FiAlertTriangle,
+  FiInfo,
+  FiXCircle,
+  FiLink
+} from "react-icons/fi";
+
+interface BlockEditorProps {
+  initialContent: string;
+  onChange: (jsonContent: string) => void;
+  statusIndicator?: "idle" | "saving" | "saved";
+}
+
+const COMMANDS = [
+  { label: "Paragraph", icon: FiFileText, iconColor: "text-zinc-550", desc: "Start writing plain paragraph text", action: (editor: any) => editor.chain().focus().clearNodes().run() },
+  { label: "Heading 1", icon: FiType, iconColor: "text-amber", desc: "Large page heading", action: (editor: any) => editor.chain().focus().toggleHeading({ level: 1 }).run() },
+  { label: "Heading 2", icon: FiType, iconColor: "text-amber/80", desc: "Medium section heading", action: (editor: any) => editor.chain().focus().toggleHeading({ level: 2 }).run() },
+  { label: "Heading 3", icon: FiType, iconColor: "text-amber/60", desc: "Small section heading", action: (editor: any) => editor.chain().focus().toggleHeading({ level: 3 }).run() },
+  { label: "Bullet List", icon: FiList, iconColor: "text-sky-400", desc: "Simple bulleted list", action: (editor: any) => editor.chain().focus().toggleBulletList().run() },
+  { label: "Numbered List", icon: FiList, iconColor: "text-sky-400", desc: "Sequential numbered list", action: (editor: any) => editor.chain().focus().toggleOrderedList().run() },
+  { label: "To-do List", icon: FiCheckSquare, iconColor: "text-[#16A34A]", desc: "Checkbox task list", action: (editor: any) => editor.chain().focus().toggleTaskList().run() },
+  { label: "Code Block", icon: FiCode, iconColor: "text-[#16A34A]", desc: "Preformatted code snippet", action: (editor: any) => editor.chain().focus().toggleCodeBlock().run() },
+  { label: "Blockquote", icon: FiMessageSquare, iconColor: "text-zinc-500", desc: "Capture block quotes", action: (editor: any) => editor.chain().focus().toggleBlockquote().run() },
+  { label: "Divider", icon: FiMinus, iconColor: "text-zinc-650", desc: "Horizontal divider line", action: (editor: any) => editor.chain().focus().setHorizontalRule().run() },
+  { label: "Tip Callout", icon: FiInfo, iconColor: "text-[#F59E0B]", desc: "Highlight amber tip box", action: (editor: any) => editor.chain().focus().insertContent({ type: "callout", attrs: { type: "tip" } }).run() },
+  { label: "Warning Callout", icon: FiAlertTriangle, iconColor: "text-[#D97706]", desc: "Highlight warning alert box", action: (editor: any) => editor.chain().focus().insertContent({ type: "callout", attrs: { type: "warning" } }).run() },
+  { label: "Info Callout", icon: FiInfo, iconColor: "text-blue-500", desc: "Highlight blue information box", action: (editor: any) => editor.chain().focus().insertContent({ type: "callout", attrs: { type: "info" } }).run() },
+  { label: "Error Callout", icon: FiXCircle, iconColor: "text-red-500", desc: "Highlight red error alert box", action: (editor: any) => editor.chain().focus().insertContent({ type: "callout", attrs: { type: "error" } }).run() },
+  { label: "Embed Link Preview", icon: FiLink, iconColor: "text-pink-500", desc: "Rich preview card from URL", action: (editor: any) => {
+      const url = prompt("Enter URL to embed:");
+      if (url) {
+        editor.chain().focus().insertContent({ type: "linkPreview", attrs: { url } }).run();
+      }
+    }
+  }
+];
+
+export default function BlockEditor({ initialContent, onChange, statusIndicator = "idle" }: BlockEditorProps) {
+  const [slashPosition, setSlashPosition] = useState<{ top: number; left: number } | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [query, setQuery] = useState("");
+  const slashMenuRef = useRef<HTMLDivElement>(null);
+
+  const lowlight = createLowlight(common);
+
+  const updateSlashMenuState = useCallback((editor: any) => {
+    if (!editor) return;
+    const { state } = editor;
+    const { from } = state.selection;
+    const $pos = state.doc.resolve(from);
+    const textBefore = $pos.parent.textBetween(Math.max(0, $pos.parentOffset - 50), $pos.parentOffset, undefined, "\0");
+    const lastSlashIndex = textBefore.lastIndexOf("/");
+
+    if (lastSlashIndex !== -1) {
+      const q = textBefore.slice(lastSlashIndex + 1);
+      if (!q.includes(" ")) {
+        setQuery(q);
+        try {
+          const coords = editor.view.coordsAtPos(from - q.length - 1);
+          setSlashPosition({ top: coords.top + 24, left: coords.left });
+        } catch {
+          // fallback
+        }
+        return;
+      }
+    }
+    setSlashPosition(null);
+    setQuery("");
+    setSelectedIndex(0);
+  }, []);
+
+  const editor = useEditor({
+    extensions: [
+      StarterKit.configure({
+        codeBlock: false, // Disabled to use codeBlockLowlight
+      }),
+      Placeholder.configure({
+        placeholder: "Start writing, or type '/' for commands...",
+      }),
+      Link.configure({
+        openOnClick: false,
+      }),
+      TaskList,
+      TaskItem.configure({
+        nested: true,
+      }),
+      CharacterCount,
+      Typography,
+      CodeBlockLowlight.configure({
+        lowlight,
+      }),
+      CalloutNode,
+      LinkPreviewNode,
+    ],
+    content: (() => {
+      try {
+        return JSON.parse(initialContent);
+      } catch (e) {
+        return initialContent || "";
+      }
+    })(),
+    editorProps: {
+      attributes: {
+        class: "prose prose-invert prose-amber max-w-none focus:outline-none min-h-[400px] text-zinc-350 font-sans text-sm tracking-wide leading-relaxed",
+      },
+    },
+    onSelectionUpdate: ({ editor }) => {
+      updateSlashMenuState(editor);
+    },
+    onUpdate: ({ editor }) => {
+      onChange(JSON.stringify(editor.getJSON()));
+      updateSlashMenuState(editor);
+    },
+  });
+
+  const filteredCommands = COMMANDS.filter((cmd) =>
+    cmd.label.toLowerCase().includes(query.toLowerCase())
+  );
+
+  // Clamp selectedIndex when search query changes filtered length
+  useEffect(() => {
+    setSelectedIndex(0);
+  }, [query]);
+
+  // Handle outside click to dismiss slash menu
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (slashPosition && slashMenuRef.current && !slashMenuRef.current.contains(e.target as Node)) {
+        setSlashPosition(null);
+      }
+    };
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => document.removeEventListener("mousedown", handleOutsideClick);
+  }, [slashPosition]);
+
+  // Keyboard navigation for slash menu
+  useEffect(() => {
+    if (!slashPosition || !editor) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (filteredCommands.length === 0) return;
+
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev + 1) % filteredCommands.length);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev - 1 + filteredCommands.length) % filteredCommands.length);
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        
+        // Remove the "/" and typed query text range
+        const { state } = editor;
+        const { from } = state.selection;
+        editor.chain().focus().deleteRange({ from: from - query.length - 1, to: from }).run();
+
+        // Run command
+        filteredCommands[selectedIndex]?.action(editor);
+        setSlashPosition(null);
+      } else if (e.key === "Escape") {
+        e.preventDefault();
+        setSlashPosition(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [slashPosition, selectedIndex, editor, query, filteredCommands]);
+
+  // Load new content if initialContent changes externally
+  useEffect(() => {
+    if (editor && initialContent) {
+      let parsed = "";
+      try {
+        parsed = JSON.parse(initialContent);
+      } catch (e) {
+        parsed = initialContent;
+      }
+      
+      const currentJSON = JSON.stringify(editor.getJSON());
+      if (JSON.stringify(parsed) !== currentJSON) {
+        editor.commands.setContent(parsed);
+      }
+    }
+  }, [initialContent, editor]);
+
+  const wordCount = editor?.storage.characterCount.words() || 0;
+
+  return (
+    <div className="relative w-full">
+      {/* Editor Content Area */}
+      <div className="min-h-[400px]">
+        <EditorContent editor={editor} />
+      </div>
+
+      {/* Floating Slash Commands Menu */}
+      {slashPosition && filteredCommands.length > 0 && (
+        <div
+          ref={slashMenuRef}
+          className="fixed z-50 bg-[#0c0c0c] border border-[#262626] w-[280px] max-h-[250px] overflow-y-auto shadow-2xl p-1 animate-fadeIn select-none rounded-none"
+          style={{
+            top: `${slashPosition.top}px`,
+            left: `${slashPosition.left}px`,
+          }}
+        >
+          <div className="px-2 py-1.5 border-b border-[#262626] font-mono text-[8px] font-bold text-zinc-555 uppercase tracking-widest">
+            Workspace blocks
+          </div>
+          <div className="space-y-0.5 mt-1">
+            {filteredCommands.map((cmd, idx) => {
+              const CmdIcon = cmd.icon;
+              return (
+                <button
+                  key={cmd.label}
+                  onClick={() => {
+                    if (editor) {
+                      const { state } = editor;
+                      const { from } = state.selection;
+                      editor.chain().focus().deleteRange({ from: from - query.length - 1, to: from }).run();
+                      cmd.action(editor);
+                      setSlashPosition(null);
+                    }
+                  }}
+                  className={cn(
+                    "w-full text-left px-2.5 py-1.5 flex items-start gap-3 transition-colors rounded-none outline-none",
+                    selectedIndex === idx ? "bg-amber/15 text-white" : "hover:bg-zinc-900/60"
+                  )}
+                >
+                  <CmdIcon className={cn("h-3.5 w-3.5 mt-0.5 shrink-0", cmd.iconColor)} />
+                  <div className="flex-1 min-w-0">
+                    <span className={cn("font-mono text-[10px] font-bold block", selectedIndex === idx ? "text-amber" : "text-zinc-200")}>
+                      {cmd.label}
+                    </span>
+                    <span className="text-[8px] text-zinc-500 font-sans tracking-wide mt-0.5 block truncate">{cmd.desc}</span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Bottom Footer Info */}
+      <div className="flex items-center justify-between border-t border-[#262626]/40 mt-8 pt-3 font-mono text-[9px] text-zinc-650 uppercase tracking-wider">
+        <div>
+          {statusIndicator === "saving" && <span className="text-amber animate-pulse">Saving changes...</span>}
+          {statusIndicator === "saved" && <span className="text-[#10B981]">Saved ✓</span>}
+          {statusIndicator === "idle" && <span className="text-zinc-500">Workspace ready</span>}
+        </div>
+        <div>{wordCount} words</div>
+      </div>
+    </div>
+  );
+}

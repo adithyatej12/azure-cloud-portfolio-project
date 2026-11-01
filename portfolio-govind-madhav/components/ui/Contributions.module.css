@@ -1,0 +1,148 @@
+/* ABOUT PAGE · Contributions — Official GitHub Heatmap layout + snake animation. */
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+
+  --snake: #34d399; /* vibrant emerald green snake */
+
+  /* Cohesive Dark Zinc + Vibrant Emerald Level Scale matching portfolio dark theme */
+  --cell-0: #141414;
+  --cell-1: #064e3b;
+  --cell-2: #047857;
+  --cell-3: #10b981;
+  --cell-4: #34d399;
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ── grid ── */
+.gridWrap {
+  width: 100%;
+  padding: 4px 0;
+}
+
+.grid {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Month & Day Labels */
+.monthLabel {
+  fill: #a1a1aa;
+  font-family: var(--font-inter, -apple-system, sans-serif);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.dayLabel {
+  fill: #71717a;
+  font-family: var(--font-inter, -apple-system, sans-serif);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+/* Cells */
+.cell {
+  fill: var(--cell-0);
+  stroke: rgba(255, 255, 255, 0.03);
+  stroke-width: 0.5px;
+  transition: fill 0.45s var(--ease-out-quart);
+}
+
+.cell[data-level="1"] {
+  fill: var(--cell-1);
+}
+.cell[data-level="2"] {
+  fill: var(--cell-2);
+}
+.cell[data-level="3"] {
+  fill: var(--cell-3);
+}
+.cell[data-level="4"] {
+  fill: var(--cell-4);
+  filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.5));
+}
+
+/* Consumed: drains back to empty */
+.cell[data-eaten="true"] {
+  fill: var(--cell-0);
+}
+
+/* The instant of the bite */
+.biting {
+  fill: var(--snake) !important;
+  transition: none !important;
+  filter: drop-shadow(0 0 6px rgba(52, 211, 153, 0.8));
+}
+
+/* ── snake ── */
+.seg {
+  fill: var(--snake);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Head reads brighter with a soft glow */
+.seg:first-child {
+  filter: drop-shadow(0 0 8px rgba(52, 211, 153, 0.9));
+}
+
+/* ── footer ── */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #262626;
+}
+
+.legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-inter, sans-serif);
+  font-size: 11px;
+  color: #a1a1aa;
+}
+
+.legendLabel {
+  margin: 0 4px;
+  font-size: 10px;
+  font-family: var(--font-inter, sans-serif);
+  color: #71717a;
+}
+
+.legendCell {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--cell-0);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.legendCell[data-level="1"] {
+  background: var(--cell-1);
+}
+.legendCell[data-level="2"] {
+  background: var(--cell-2);
+}
+.legendCell[data-level="3"] {
+  background: var(--cell-3);
+}
+.legendCell[data-level="4"] {
+  background: var(--cell-4);
+  box-shadow: 0 0 4px rgba(52, 211, 153, 0.4);
+}
+
+@media (max-width: 560px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
