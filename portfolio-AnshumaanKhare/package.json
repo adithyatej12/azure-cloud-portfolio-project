@@ -1,0 +1,29 @@
+{
+  "name": "anshumaan-khare-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Professional Full Stack & Cloud Developer Portfolio of Anshumaan Khare",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "developer",
+    "cloud",
+    "azure",
+    "aws",
+    "tailwind",
+    "react",
+    "vite"
+  ],
+  "author": "Anshumaan Khare",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
+
