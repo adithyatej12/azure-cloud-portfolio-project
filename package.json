@@ -1,0 +1,24 @@
+{
+  "name": "simran-sahay-portfolio",
+  "version": "1.0.0",
+  "description": "Animated Cloud Architect & DevOps Engineer Portfolio for Simran Sahay",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "aws",
+    "cloud",
+    "serverless",
+    "python",
+    "devops",
+    "simran-sahay"
+  ],
+  "author": "Simran Sahay",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
