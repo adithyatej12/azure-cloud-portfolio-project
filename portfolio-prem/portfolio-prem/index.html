@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Social Graph Meta Tags -->
+  <title>Prem Mahendra Naik | Cloud Engineer & AWS/Azure Specialist</title>
+  <meta name="description" content="Portfolio of Prem Mahendra Naik - Cloud Engineer, AWS CDK & Serverless Specialist, MCA Cloud Computing candidate at Jain University. Hands-on AWS, Azure, DevOps & Kubernetes experience." />
+  <meta name="keywords" content="Prem Mahendra Naik, Cloud Engineer, AWS CDK, Serverless, Azure Data Lake, Kubernetes, Helm, Istio, Cloud Computing, DevOps, Bengaluru, Portfolio" />
+  <meta name="author" content="Prem Mahendra Naik" />
+  
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/premnaik0" />
+  <meta property="og:title" content="Prem Mahendra Naik | Cloud Engineer Portfolio" />
+  <meta property="og:description" content="Explore AWS Serverless, Azure Data Lake, CDK IaC, and Kubernetes canary architectures by Prem Mahendra Naik." />
+  
+  <!-- Google Fonts: Bricolage Grotesque, DM Sans, Geist Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Geist+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Interactive Cloud Mesh Canvas -->
+  <div class="bg-ambient-glow">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+  <canvas id="cloud-canvas"></canvas>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon">PMN</div>
+        <span>Prem Naik</span>
+        <span class="brand-tag">Cloud // IaC</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Engineering</a></li>
+          <li><a href="#projects" class="nav-link">Architecture & Projects</a></li>
+          <li><a href="#skills" class="nav-link">Ecosystem</a></li>
+          <li><a href="#experience" class="nav-link">Trajectory</a></li>
+          <li><a href="#certifications" class="nav-link">Certs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-actions">
+        <button class="btn btn-terminal open-terminal-trigger" title="Launch Cloud Shell (Shortcut: ` or Ctrl+K)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+          <span>CLI Shell</span>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Mobile Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Cloud Systems Operational · AWS & Azure Intern</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Prem Mahendra Naik</span>
+          </h1>
+
+          <div class="hero-subtitle-box">
+            <span>Specializing in:</span>
+            <span class="dynamic-role" id="dynamic-role">Cloud Engineer</span>
+          </div>
+
+          <p class="hero-bio">
+            MCA (Cloud Computing) student at <strong>Jain University</strong> & Cloud Computing Intern at <strong>Codtech</strong>. 
+            Hands-on builder delivering end-to-end serverless architectures, AWS CDK stacks, and Azure Synapse pipelines with a 
+            <strong>build-it-then-fix-it</strong> instinct and CloudWatch root-cause precision.
+          </p>
+
+          <!-- Quick Multi-Cloud Ecosystem Tags -->
+          <div class="cloud-ecosystem-pills">
+            <span class="cloud-pill aws">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l-10-5v7l10 5 10-5v-7l-10 5z"/></svg>
+              AWS CDK & Serverless
+            </span>
+            <span class="cloud-pill azure">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.05 2.14a.75.75 0 0 0-.82.16L1.87 12.65a.75.75 0 0 0 .53 1.28H9.5v7.32a.75.75 0 0 0 1.28.53l10.36-10.35a.75.75 0 0 0-.53-1.28h-7.56V2.89a.75.75 0 0 0-.02-.75z"/></svg>
+              Azure Data Lake (ADLS)
+            </span>
+            <span class="cloud-pill k8s">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Kubernetes Canary (Istio+Helm)
+            </span>
+          </div>
+
+          <!-- Hero Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Cloud Architectures</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            
+            <a href="https://linkedin.com/in/premnaik" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
+            </a>
+
+            <button class="btn btn-terminal open-terminal-trigger" title="Launch Interactive Cloud Shell">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              <span>CLI Terminal</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Architecture HUD Card -->
+        <div class="hero-visual reveal delay-200">
+          <div class="floating-pill-badge top-left">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>CloudWatch Debugged</span>
+          </div>
+
+          <div class="floating-pill-badge bottom-right">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff9900" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            <span>AWS CDK TypeScript</span>
+          </div>
+
+          <div class="arch-hud-card">
+            <div class="arch-hud-header">
+              <div class="hud-title-wrap">
+                <span class="hud-badge">LIVE CLOUD STACK</span>
+                <span style="font-size: 0.85rem; font-weight: 600;">Serverless Pipeline</span>
+              </div>
+              <div class="hud-controls">
+                <span class="hud-dot red"></span>
+                <span class="hud-dot yellow"></span>
+                <span class="hud-dot green"></span>
+              </div>
+            </div>
+
+            <!-- Pipeline Live Steps -->
+            <div class="arch-pipeline-flow">
+              <div class="pipeline-step">
+                <div class="step-info">
+                  <div class="step-icon aws">S3</div>
+                  <div class="step-text">
+                    <h4>Static Ingestion & Storage</h4>
+                    <p>S3 + CloudFront OAC & IAM Policy</p>
+                  </div>
+                </div>
+                <span class="step-tag pass">200 OK</span>
+              </div>
+
+              <div class="pipeline-step">
+                <div class="step-info">
+                  <div class="step-icon lambda">λ</div>
+                  <div class="step-text">
+                    <h4>Event Processing & Routing</h4>
+                    <p>3x AWS Lambda + API Gateway</p>
+                  </div>
+                </div>
+                <span class="step-tag pass">&lt;18ms</span>
+              </div>
+
+              <div class="pipeline-step">
+                <div class="step-info">
+                  <div class="step-icon dynamo">DB</div>
+                  <div class="step-text">
+                    <h4>Persistence & DLQ Handling</h4>
+                    <p>3x DynamoDB Tables + SQS DLQ</p>
+                  </div>
+                </div>
+                <span class="step-tag pass">Zero Loss</span>
+              </div>
+
+              <div class="pipeline-step">
+                <div class="step-info">
+                  <div class="step-icon cdk">IaC</div>
+                  <div class="step-text">
+                    <h4>Deployment & Teardown</h4>
+                    <p>AWS CDK TypeScript Stacks</p>
+                  </div>
+                </div>
+                <span class="step-tag pass">Automated</span>
+              </div>
+            </div>
+
+            <!-- HUD Quick Metrics -->
+            <div class="hud-metrics-row">
+              <div class="metric-box">
+                <div class="metric-val cyan">AWS + AZ</div>
+                <div class="metric-lbl">Multi-Cloud</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val aws">10+</div>
+                <div class="metric-lbl">Services</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val emerald">100%</div>
+                <div class="metric-lbl">IaC Defined</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ENGINEERING PHILOSOPHY & ABOUT ==================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Core Focus & Mindset</span>
+        <h2 class="section-title">Engineering Beyond Code</h2>
+        <p class="section-subtitle">
+          Owning cloud systems from architectural blueprint through automated IaC provisioning, CloudWatch-driven log analysis, and GenAI acceleration.
+        </p>
+      </div>
+
+      <div class="philosophy-grid">
+        <div class="glass-card philosophy-card reveal delay-100">
+          <div class="philo-icon cyan">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+          </div>
+          <h3>End-to-End Delivery</h3>
+          <p>
+            Designing architectures that combine compute, routing, database persistence, and CDN distribution. Verified in the console and codified into automated <strong>AWS CDK</strong> and <strong>GitHub Actions</strong> workflows.
+          </p>
+        </div>
+
+        <div class="glass-card philosophy-card reveal delay-200">
+          <div class="philo-icon aws">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>"Build-It-Then-Fix-It" Debugging</h3>
+          <p>
+            Relentless root-cause analysis. Expert in dissecting <strong>CloudWatch tracebacks</strong>, diagnosing SQS dead-letter queues, resolving Azure ADLS Gen2 403 Forbidden IAM errors, and tuning WAF rules.
+          </p>
+        </div>
+
+        <div class="glass-card philosophy-card reveal delay-300">
+          <div class="philo-icon purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <h3>AI-Accelerated Engineering</h3>
+          <p>
+            Leveraging cutting-edge Generative AI to rapidly generate and validate IaC construct templates, synthesize stress-test payloads, and generate clean technical runbooks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS & ARCHITECTURE SHOWCASE ==================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge aws">Cloud Architectures & Code</span>
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <p class="section-subtitle">
+          Real-world serverless systems, IaC pipelines, ML workflows, and native applications built and deployed by Prem.
+        </p>
+      </div>
+
+      <!-- Project Filters -->
+      <div class="filter-container reveal delay-100">
+        <button class="filter-btn active" data-filter="all">All Systems (8)</button>
+        <button class="filter-btn" data-filter="aws">AWS & Serverless</button>
+        <button class="filter-btn" data-filter="devops">DevOps & IaC</button>
+        <button class="filter-btn" data-filter="azure">Azure & Data</button>
+        <button class="filter-btn" data-filter="app">Mobile & Full Stack</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- 1. Serverless E-Commerce Backend (AWS CDK) -->
+        <div class="project-card-wrapper reveal delay-100" data-categories="aws devops">
+          <div class="project-card featured-aws">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-aws">AWS Serverless & CDK</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Serverless E-Commerce Backend via AWS CDK</h3>
+            
+            <!-- Architecture Flow -->
+            <div class="arch-diagram-flow">
+              <span class="arch-node">Frontend Web</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">API Gateway</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">3x Lambda</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">3x DynamoDB</span>
+            </div>
+
+            <p class="project-desc">
+              Engineered a highly resilient, fully automated serverless e-commerce infrastructure using AWS CDK in TypeScript. Implemented modular microservice routing for catalog, cart, and order processing.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated provisioning of 3 Lambda functions and 3 distinct DynamoDB tables with IAM least-privilege policies.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Configured RESTful API Gateway endpoints with integrated validation, CORS, and full frontend connectivity.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">AWS CDK</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">AWS Lambda</span>
+              <span class="project-tag">DynamoDB</span>
+              <span class="project-tag">API Gateway</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Serverless Image-Thumbnailer Pipeline -->
+        <div class="project-card-wrapper reveal delay-200" data-categories="aws devops">
+          <div class="project-card featured-aws">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-aws">AWS Event-Driven Pipeline</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Event-Driven Image Thumbnailer & DLQ Pipeline</h3>
+
+            <!-- Architecture Flow -->
+            <div class="arch-diagram-flow">
+              <span class="arch-node highlight">S3 Upload</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">Lambda</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node">DynamoDB</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">[SQS DLQ]</span>
+            </div>
+
+            <p class="project-desc">
+              Built an event-driven media processing pipeline triggered by S3 bucket events. Features SQS Dead-Letter Queues for error resilience, CloudFront CDN edge distribution, and CloudWatch log tracing.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated S3 image upload event triggers running asynchronous resizing and metadata extraction.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Debugged edge-case payload corruptions via CloudWatch tracebacks and captured failing jobs in SQS DLQs.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">AWS S3</span>
+              <span class="project-tag">Lambda</span>
+              <span class="project-tag">SQS DLQ</span>
+              <span class="project-tag">CloudWatch</span>
+              <span class="project-tag">CloudFront</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Kubernetes Canary Deployment (Helm + Istio) -->
+        <div class="project-card-wrapper reveal delay-100" data-categories="devops">
+          <div class="project-card featured-devops">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-devops">Kubernetes & GitOps</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Hardened Kubernetes Canary Deployment</h3>
+
+            <!-- Architecture Flow -->
+            <div class="arch-diagram-flow">
+              <span class="arch-node">GitHub Actions</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">Helm Charts</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">Istio Service Mesh</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node">Canary 10/90</span>
+            </div>
+
+            <p class="project-desc">
+              Designed a zero-downtime canary deployment pipeline on Kubernetes leveraging Helm package manager and Istio service mesh routing, fully automated via GitHub Actions CI/CD.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Configured Istio VirtualServices & DestinationRules for granular weighted traffic shifting (10% ➔ 50% ➔ 100%).</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated linting, image packaging, and Helm chart releases via GitHub Actions workflows.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">Kubernetes</span>
+              <span class="project-tag">Helm</span>
+              <span class="project-tag">Istio</span>
+              <span class="project-tag">GitHub Actions</span>
+              <span class="project-tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Azure Data Lake & Synapse SQL Pool -->
+        <div class="project-card-wrapper reveal delay-200" data-categories="azure">
+          <div class="project-card featured-azure">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-azure">Azure Data Engineering</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Azure Synapse & ADLS Gen2 Serverless Lake</h3>
+
+            <!-- Architecture Flow -->
+            <div class="arch-diagram-flow">
+              <span class="arch-node azure">ADLS Gen2 Storage</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node azure">Data Factory Linked Svc</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node azure">Synapse SQL (OPENROWSET)</span>
+            </div>
+
+            <p class="project-desc">
+              Provisioned an Azure Data Lake Storage (ADLS Gen2) repository with linked services in Azure Data Factory, querying big-data lake files through Synapse Serverless SQL pools.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Crafted high-performance queries using OPENROWSET to parse Parquet/CSV data without persistent server overhead.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Troubleshot and resolved 403 access control permissions, Azure RBAC roles, and linked service credentials.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">Azure ADLS Gen2</span>
+              <span class="project-tag">Synapse Analytics</span>
+              <span class="project-tag">Data Factory</span>
+              <span class="project-tag">Serverless SQL</span>
+              <span class="project-tag">RBAC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. SageMaker XGBoost ML Pipeline -->
+        <div class="project-card-wrapper reveal delay-100" data-categories="aws devops">
+          <div class="project-card featured-aws">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-aws">AWS MLOps & CI/CD</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">SageMaker XGBoost CI/CD Pipeline</h3>
+
+            <!-- Architecture Flow -->
+            <div class="arch-diagram-flow">
+              <span class="arch-node">GitHub Repo</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">CodePipeline</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">CodeBuild</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">SageMaker Model</span>
+            </div>
+
+            <p class="project-desc">
+              Shipped an end-to-end automated machine learning pipeline integrating AWS CodePipeline, CodeBuild, and Amazon SageMaker XGBoost algorithm training and artifact generation.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated buildspec orchestration for continuous model retraining, evaluation, and artifact storage in S3.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">AWS SageMaker</span>
+              <span class="project-tag">CodePipeline</span>
+              <span class="project-tag">CodeBuild</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">MLOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. EC2 Auto Scaling + ALB + WAF Security -->
+        <div class="project-card-wrapper reveal delay-200" data-categories="aws devops">
+          <div class="project-card featured-aws">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-aws">AWS Infrastructure & Security</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">EC2 Auto Scaling Groups Behind ALB & WAF</h3>
+
+            <!-- Architecture Flow -->
+            <div class="arch-diagram-flow">
+              <span class="arch-node highlight">AWS WAF</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">Application Load Balancer</span>
+              <span class="arch-arrow">➔</span>
+              <span class="arch-node highlight">EC2 Auto Scaling Group</span>
+            </div>
+
+            <p class="project-desc">
+              High-availability compute infrastructure with automated elasticity, health-check target tracking, and protective AWS WAF rate-limiting and SQL injection inspection rules.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero-downtime rolling updates with multi-AZ target group distribution and CloudWatch alarm triggers.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">EC2 ASG</span>
+              <span class="project-tag">ALB</span>
+              <span class="project-tag">AWS WAF</span>
+              <span class="project-tag">VPC</span>
+              <span class="project-tag">Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. F2D - Fresh2Door Grocery Marketplace App -->
+        <div class="project-card-wrapper reveal delay-100" data-categories="app">
+          <div class="project-card featured-app">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-java">Java Native Application</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">F2D – Fresh2Door Marketplace Platform</h3>
+            <p class="project-desc">
+              Comprehensive grocery marketplace application supporting dual customer and retailer flows: live inventory tracking, order fulfillment lifecycles, and barcode-based product catalog lookup.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Architected multi-screen UI state management and relational database caching for retail orders.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Android</span>
+              <span class="project-tag">Barcode Scanner</span>
+              <span class="project-tag">Database</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Symptom Checker & Native Apps -->
+        <div class="project-card-wrapper reveal delay-200" data-categories="app">
+          <div class="project-card featured-app">
+            <div class="project-meta-top">
+              <span class="project-cat-badge cat-java">Java · REST API & Maps</span>
+              <div class="project-links">
+                <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Source on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Symptom Checker, Expense Tracker & Events Board</h3>
+            <p class="project-desc">
+              Suite of Java apps featuring RESTful API integration, dynamic maps provider mapping, real-time live FX currency conversions, and end-to-end CRUD event boards.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Handled empty-result edge cases, network retry timeouts, and multi-format API payloads reliably.</span>
+              </li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">REST APIs</span>
+              <span class="project-tag">Live FX API</span>
+              <span class="project-tag">Map Integration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS MATRIX & ECOSYSTEM ==================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge emerald">Technical Inventory</span>
+        <h2 class="section-title">Cloud Stack & Technical Ecosystem</h2>
+        <p class="section-subtitle">
+          Comprehensive toolset across public clouds, infrastructure as code, distributed systems, and observability.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- 1. AWS Cloud Services -->
+        <div class="skill-category-card reveal delay-100">
+          <div class="cat-header">
+            <div class="cat-icon" style="background: rgba(255, 153, 0, 0.15); color: var(--accent-aws);">☁️</div>
+            <h3>AWS Cloud Platforms</h3>
+          </div>
+          <div class="skill-chips-wrap">
+            <span class="skill-badge aws">AWS Lambda</span>
+            <span class="skill-badge aws">Amazon S3</span>
+            <span class="skill-badge aws">API Gateway</span>
+            <span class="skill-badge aws">DynamoDB</span>
+            <span class="skill-badge aws">Amazon SQS</span>
+            <span class="skill-badge aws">CloudFront (OAC)</span>
+            <span class="skill-badge aws">IAM & Policies</span>
+            <span class="skill-badge aws">EC2 (ASG + ALB)</span>
+            <span class="skill-badge aws">AWS WAF</span>
+            <span class="skill-badge aws">SageMaker</span>
+            <span class="skill-badge aws">CodePipeline</span>
+            <span class="skill-badge aws">CodeBuild</span>
+          </div>
+        </div>
+
+        <!-- 2. Azure Cloud Services -->
+        <div class="skill-category-card reveal delay-200">
+          <div class="cat-header">
+            <div class="cat-icon" style="background: rgba(0, 120, 212, 0.15); color: var(--accent-azure);">🔷</div>
+            <h3>Microsoft Azure</h3>
+          </div>
+          <div class="skill-chips-wrap">
+            <span class="skill-badge azure">ADLS Gen2 Data Lake</span>
+            <span class="skill-badge azure">Azure Data Factory</span>
+            <span class="skill-badge azure">Synapse Analytics</span>
+            <span class="skill-badge azure">Serverless SQL Pools</span>
+            <span class="skill-badge azure">OPENROWSET Queries</span>
+            <span class="skill-badge azure">Azure RBAC & IAM</span>
+            <span class="skill-badge azure">Linked Services</span>
+          </div>
+        </div>
+
+        <!-- 3. IaC & DevOps -->
+        <div class="skill-category-card reveal delay-300">
+          <div class="cat-header">
+            <div class="cat-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">⚙️</div>
+            <h3>IaC & DevOps</h3>
+          </div>
+          <div class="skill-chips-wrap">
+            <span class="skill-badge">AWS CDK (TypeScript)</span>
+            <span class="skill-badge">Infrastructure as Code</span>
+            <span class="skill-badge">Kubernetes</span>
+            <span class="skill-badge">Helm Charts</span>
+            <span class="skill-badge">Istio Service Mesh</span>
+            <span class="skill-badge">GitHub Actions</span>
+            <span class="skill-badge">Git & Version Control</span>
+            <span class="skill-badge">Deployment Teardown</span>
+          </div>
+        </div>
+
+        <!-- 4. Languages & Frameworks -->
+        <div class="skill-category-card reveal delay-100">
+          <div class="cat-header">
+            <div class="cat-icon" style="background: rgba(139, 92, 246, 0.15); color: var(--accent-purple);">💻</div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-chips-wrap">
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">TypeScript / JS</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">HTML5 / Vanilla CSS3</span>
+          </div>
+        </div>
+
+        <!-- 5. Testing, Debugging & Observability -->
+        <div class="skill-category-card reveal delay-200">
+          <div class="cat-header">
+            <div class="cat-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">🔍</div>
+            <h3>Observability & QA</h3>
+          </div>
+          <div class="skill-chips-wrap">
+            <span class="skill-badge">CloudWatch Log Analysis</span>
+            <span class="skill-badge">Root-Cause Debugging</span>
+            <span class="skill-badge">REST/JSON API Testing</span>
+            <span class="skill-badge">DLQ Error Tracing</span>
+            <span class="skill-badge">Exploratory Testing</span>
+            <span class="skill-badge">Manual Test-Case Design</span>
+          </div>
+        </div>
+
+        <!-- 6. AI-Assisted Engineering -->
+        <div class="skill-category-card reveal delay-300">
+          <div class="cat-header">
+            <div class="cat-icon" style="background: rgba(244, 63, 94, 0.15); color: var(--accent-rose);">⚡</div>
+            <h3>AI & Acceleration</h3>
+          </div>
+          <div class="skill-chips-wrap">
+            <span class="skill-badge">Generative AI Tools</span>
+            <span class="skill-badge">IaC Generation & Validation</span>
+            <span class="skill-badge">Automated Bug Diagnosis</span>
+            <span class="skill-badge">Synthetic Test Data</span>
+            <span class="skill-badge">Technical Documentation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE & EDUCATION TIMELINE ==================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Career & Academic Milestones</span>
+        <h2 class="section-title">Experience & Trajectory</h2>
+        <p class="section-subtitle">
+          Proven history of delivering cloud infrastructure, resolving real incidents, and academic excellence.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+
+        <!-- 1. Codtech - Cloud Computing Intern -->
+        <div class="timeline-item reveal delay-100">
+          <div class="timeline-dot aws"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Cloud Computing Intern</h3>
+                <span class="timeline-company">Codtech</span>
+              </div>
+              <span class="timeline-period current">2026 – Present</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Building and deploying AWS projects end-to-end via console & CDK: static site hosting (S3 + CloudFront with OAC, scoped IAM policy), EC2 Auto Scaling Groups behind ALB, WAF security, and serverless pipelines.</li>
+              <li>Delivered a serverless e-commerce backend via AWS CDK with 3 Lambda functions, 3 DynamoDB tables, and API Gateway routing behind a full frontend.</li>
+              <li>Built & deployed a serverless image-thumbnailer pipeline from console (S3 ➔ Lambda ➔ DynamoDB, SQS DLQ, CloudFront), debugging failures via CloudWatch traceback analysis.</li>
+              <li>Shipped CI/CD pipelines (CodePipeline + CodeBuild + GitHub), SageMaker XGBoost ML training on Iris, and hardened Kubernetes canary deployments (Helm + Istio) with GitHub Actions CI/CD.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. Vanillakart - Digital Marketing & Web Intern -->
+        <div class="timeline-item reveal delay-200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Digital Marketing & Web Intern</h3>
+                <span class="timeline-company">Vanillakart</span>
+              </div>
+              <span class="timeline-period">Feb 2024 – Oct 2024</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Worked hands-on with web design and development across cross-functional engineering teams.</li>
+              <li>Gained frontline exposure to incident-response processes and uptime recovery during PR/disaster-management scenarios.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3. The ASK Systems - Digital Marketing Intern -->
+        <div class="timeline-item reveal delay-300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Digital Marketing Intern</h3>
+                <span class="timeline-company">The ASK Systems</span>
+              </div>
+              <span class="timeline-period">Oct 2023 – Mar 2024</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Applied advanced SEO, keyword strategy, and web traffic analytics concepts to client websites to measurably improve organic reach and user engagement.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. Academic Cloud Labs - Azure Lakehouse -->
+        <div class="timeline-item reveal delay-100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Academic Cloud Research & Labs</h3>
+                <span class="timeline-company">Azure Data Lake & Serverless SQL Architecture</span>
+              </div>
+              <span class="timeline-period">Academic Milestone</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Provisioned an Azure data lake (ADLS Gen2) and Data Factory linked service, querying lake files through Synapse serverless SQL pool via OPENROWSET.</li>
+              <li>Identified, troubleshot, and documented 403 access control permission errors and file-not-found issues.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. MCA - Jain University -->
+        <div class="timeline-item reveal delay-200">
+          <div class="timeline-dot purple"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Master of Computer Applications (MCA)</h3>
+                <span class="timeline-company">Specialization in Cloud Computing · Jain (Deemed-to-be University), Bangalore</span>
+              </div>
+              <span class="timeline-period">2025 – 2027</span>
+            </div>
+            <p style="margin-top:0.5rem; font-size:0.9rem; color:var(--text-secondary);">
+              Advanced studies covering Distributed Cloud Architectures, Serverless Microservices, Cloud Security & Governance, IaC Orchestration, and Containerization.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. BCA - Goa -->
+        <div class="timeline-item reveal delay-300">
+          <div class="timeline-dot purple"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Bachelor of Computer Applications (BCA)</h3>
+                <span class="timeline-company">Sridora Caculo College of Commerce and Management Studies, Mapusa, Goa</span>
+              </div>
+              <span class="timeline-period">2022 – 2025</span>
+            </div>
+            <p style="margin-top:0.5rem; font-size:0.9rem; color:var(--text-secondary);">
+              Foundations in Object-Oriented Programming (Java, C++, Python), Relational Database Management Systems (SQL), Operating Systems, and Web Technologies.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATIONS SHOWCASE ==================== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge aws">Accreditations & Credentials</span>
+        <h2 class="section-title">Verified Certifications</h2>
+        <p class="section-subtitle">
+          Validated domain proficiency across cloud architecture, enterprise networking, AI, and cybersecurity.
+        </p>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- 1. AWS Cloud Architecting -->
+        <div class="cert-card reveal delay-100">
+          <div class="cert-badge-icon">☁️</div>
+          <h3 class="cert-name">AWS Cloud Architecting</h3>
+          <span class="cert-issuer">Amazon Web Services</span>
+        </div>
+
+        <!-- 2. AWS Networking -->
+        <div class="cert-card reveal delay-200">
+          <div class="cert-badge-icon">🌐</div>
+          <h3 class="cert-name">AWS Networking</h3>
+          <span class="cert-issuer">Amazon Web Services</span>
+        </div>
+
+        <!-- 3. Generative AI -->
+        <div class="cert-card ai-cert reveal delay-300">
+          <div class="cert-badge-icon">✨</div>
+          <h3 class="cert-name">Generative AI</h3>
+          <span class="cert-issuer">AI Foundation & Systems</span>
+        </div>
+
+        <!-- 4. Cybersecurity Fundamentals -->
+        <div class="cert-card sec-cert reveal delay-400">
+          <div class="cert-badge-icon">🛡️</div>
+          <h3 class="cert-name">Cybersecurity Fundamentals</h3>
+          <span class="cert-issuer">Security & Risk Analysis</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & CONNECT HUB ==================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Connect With Prem</h2>
+        <p class="section-subtitle">
+          Open to full-time Cloud Engineer, Cloud Support, DevOps, and Serverless engineering opportunities.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left Contact Info Card -->
+        <div class="glass-card contact-info-card reveal delay-100">
+          <div>
+            <h3 style="font-size:1.4rem; margin-bottom:0.5rem;">Direct Coordinates</h3>
+            <p style="font-size:0.92rem;">Feel free to reach out directly via email, phone, LinkedIn, or GitHub.</p>
+          </div>
+
+          <div class="contact-methods">
+            <!-- Email -->
+            <div class="contact-pill-item">
+              <div class="contact-pill-left">
+                <div class="contact-pill-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-pill-text">
+                  <span class="label">Email Address</span>
+                  <a href="mailto:prem.25005322@jainuniversity.ac.in" class="val">prem.25005322@jainuniversity.ac.in</a>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="prem.25005322@jainuniversity.ac.in" title="Copy Email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-pill-item">
+              <div class="contact-pill-left">
+                <div class="contact-pill-icon" style="color:var(--accent-emerald); background:rgba(16,185,129,0.12);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-pill-text">
+                  <span class="label">Phone / WhatsApp</span>
+                  <a href="tel:7887928535" class="val">+91 7887928535</a>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="7887928535" title="Copy Phone Number">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy
+              </button>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-pill-item">
+              <div class="contact-pill-left">
+                <div class="contact-pill-icon" style="color:var(--accent-aws); background:rgba(255,153,0,0.12);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-pill-text">
+                  <span class="label">Location</span>
+                  <span class="val">Bengaluru, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="social-links-row">
+            <a href="https://linkedin.com/in/premnaik" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <a href="https://github.com/premnaik0" target="_blank" rel="noopener noreferrer" class="social-btn github">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub Repos</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Contact Form -->
+        <div class="glass-card contact-form-card reveal delay-200">
+          <h3 style="font-size:1.4rem; margin-bottom:0.5rem;">Send a Message</h3>
+          <p style="font-size:0.92rem; margin-bottom:1.5rem;">Have a project in mind or interested in hiring? Drop a note below.</p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Full Name *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Henderson" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@enterprise.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message / Project Inquiry *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Describe the role or architecture opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top:0.5rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <div class="logo-icon">PMN</div>
+            <span>Prem Mahendra Naik</span>
+          </a>
+          <p>Cloud Engineer & MCA Cloud Computing candidate passionate about building resilient serverless architectures and automated IaC.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prem Mahendra Naik. Built with pure modern web technologies & cloud craftsmanship.
+        </div>
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          <span>S3 + CloudFront Ready · AWS CDK Compliant</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE CLOUD TERMINAL MODAL ==================== -->
+  <div class="terminal-modal-overlay" id="terminal-modal">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+          <span>prem@cloud-engine: ~ (bash / aws-cli)</span>
+        </div>
+        <div class="terminal-actions">
+          <button id="close-terminal-btn" aria-label="Close Terminal">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="terminal-body" id="terminal-body">
+        <div class="term-line">
+          <span class="term-cyan">Antigravity Cloud Shell v2.4 [Cloud Architecture Environment]</span>
+        </div>
+        <div class="term-line term-muted">
+          Type <span class="term-highlight">help</span> to explore cloud commands or click chips below. Press <span class="term-cyan">ESC</span> to close.
+        </div>
+
+        <div id="terminal-output" class="terminal-output"></div>
+
+        <div class="terminal-input-row">
+          <span class="terminal-prompt-label">prem@cloud:~$</span>
+          <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false" />
+        </div>
+      </div>
+
+      <div class="terminal-quick-chips">
+        <span class="chip-label">Quick Commands:</span>
+        <button class="terminal-chip" data-cmd="whoami">whoami</button>
+        <button class="terminal-chip" data-cmd="skills">skills</button>
+        <button class="terminal-chip" data-cmd="projects">projects</button>
+        <button class="terminal-chip" data-cmd="aws">aws status</button>
+        <button class="terminal-chip" data-cmd="azure">azure lake</button>
+        <button class="terminal-chip" data-cmd="certs">certs</button>
+        <button class="terminal-chip" data-cmd="cat resume.txt">cat resume</button>
+        <button class="terminal-chip" data-cmd="sudo hire">sudo hire</button>
+        <button class="terminal-chip" data-cmd="clear">clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
