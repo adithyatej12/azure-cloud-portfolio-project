@@ -1,0 +1,57 @@
+[
+  {
+    "src": "/img/icons/icon-python.svg",
+    "alt": "Python Logo",
+    "caption": "Python"
+  },
+  {
+    "src": "/img/icons/icon-java.svg",
+    "alt": "Java Logo",
+    "caption": "Java"
+  },
+  {
+    "src": "/img/icons/icon-javascript.svg",
+    "alt": "JavaScript Logo",
+    "caption": "JavaScript"
+  },
+  {
+    "src": "/img/icons/icon-html.svg",
+    "alt": "HTML5 Logo",
+    "caption": "HTML5"
+  },
+  {
+    "src": "/img/icons/icon-css.svg",
+    "alt": "CSS3 Logo",
+    "caption": "CSS3"
+  },
+  {
+    "src": "/img/icons/icon-mysql.svg",
+    "alt": "MySQL Logo",
+    "caption": "MySQL"
+  },
+  {
+    "src": "/img/icons/icon-aws.svg",
+    "alt": "AWS Logo",
+    "caption": "AWS"
+  },
+  {
+    "src": "/img/icons/icon-flask.svg",
+    "alt": "Flask Logo",
+    "caption": "Flask"
+  },
+  {
+    "src": "/img/icons/icon-php.svg",
+    "alt": "PHP Logo",
+    "caption": "PHP"
+  },
+  {
+    "src": "/img/icons/icon-git.svg",
+    "alt": "Git Logo",
+    "caption": "Git / GitHub"
+  },
+  {
+    "src": "/img/icons/icon-vscode.svg",
+    "alt": "VS Code Logo",
+    "caption": "VS Code"
+  }
+]

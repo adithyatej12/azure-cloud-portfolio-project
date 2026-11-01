@@ -1,0 +1,20 @@
+[
+  {
+    "avatar": "/img/avatars/400x400_t01.webp",
+    "name": "Alex Tomato",
+    "position": "Brand Manager in Instant Design",
+    "companyLink": "#",
+    "rating": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud. Dolore magna aliquam.",
+    "projectLink": "#"
+  },
+  {
+    "avatar": "/img/avatars/400x400_t02.webp",
+    "name": "Jenny Pineapple",
+    "position": "SEO in Creative People",
+    "companyLink": "#",
+    "rating": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud. Dolore magna aliquam.",
+    "projectLink": "#"
+  }
+]

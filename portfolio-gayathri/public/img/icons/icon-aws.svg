@@ -1,0 +1,9 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="120px" height="90px" viewBox="0 0 120 90">
+  <g transform="translate(20, 15)">
+    <!-- Dark Blue/Gray AWS Cloud Block -->
+    <path fill="#232F3E" d="M15,35 C8,35 2,30 2,23 C2,17 7,12 13,11 C15,5 23,0 32,0 C40,0 47,5 49,12 C54,10 59,12 62,17 C66,15 71,18 72,23 C72,23 72,24 72,24 C77,25 80,29 80,34 C80,39 76,40 72,40 L15,40 Z"/>
+    <!-- Orange Smile Arrow -->
+    <path fill="none" stroke="#FF9900" stroke-width="4" stroke-linecap="round" d="M18,48 C28,56 52,56 62,48"/>
+    <path fill="#FF9900" d="M58,45 L64,48 L61,42 Z"/>
+  </g>
+</svg>

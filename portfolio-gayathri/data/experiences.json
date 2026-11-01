@@ -1,0 +1,56 @@
+[
+  {
+    "date": "AWS Academy",
+    "title": "Cloud Architecting",
+    "agency": {
+      "name": "AWS Academy",
+      "link": "https://aws.amazon.com/training/"
+    },
+    "description": "Acquired comprehensive training in architecture design, scalability, security, and deploying resilient systems on Amazon Web Services."
+  },
+  {
+    "date": "AWS Skill Builder",
+    "title": "AWS Cloud Practitioner Essentials",
+    "agency": {
+      "name": "AWS Skill Builder / Amazon Web Services",
+      "link": "https://aws.amazon.com/training/"
+    },
+    "description": "Foundational understanding of cloud concepts, security, compliance, core services, billing, pricing, and support models."
+  },
+  {
+    "date": "Tech Mindsparc",
+    "title": "Full Stack Web Development",
+    "agency": {
+      "name": "Tech Mindsparc Innovations",
+      "link": "#"
+    },
+    "description": "Certified training in developing front-to-back web applications, structuring clean code bases, and database management."
+  },
+  {
+    "date": "Forage",
+    "title": "Data Analytics & Visualization Job Simulation",
+    "agency": {
+      "name": "Forage – Accenture",
+      "link": "https://www.theforage.com"
+    },
+    "description": "Completed simulation modules resolving real-world business challenges in data modeling, analysis, and visualization dashboard preparation."
+  },
+  {
+    "date": "Coursera",
+    "title": "Ordered Data Structures & Network Architecture",
+    "agency": {
+      "name": "Coursera – University of Illinois",
+      "link": "https://www.coursera.org"
+    },
+    "description": "Acquired skills in organizing structured data types and analyzing advanced networking patterns."
+  },
+  {
+    "date": "LinkedIn",
+    "title": "Project Management Foundations",
+    "agency": {
+      "name": "LinkedIn Learning",
+      "link": "https://www.linkedin.com/learning/"
+    },
+    "description": "Gained key foundational competencies in scoping project lifetimes, resource planning, and handling risks."
+  }
+]

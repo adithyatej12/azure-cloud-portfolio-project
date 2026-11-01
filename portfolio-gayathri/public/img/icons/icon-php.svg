@@ -1,0 +1,8 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="120px" height="90px" viewBox="0 0 120 90">
+  <g transform="translate(25, 20)">
+    <!-- Blue/purple Oval -->
+    <ellipse cx="35" cy="25" rx="35" ry="22" fill="#777BB4"/>
+    <!-- PHP Letters -->
+    <text x="35" y="32" font-family="sans-serif" font-weight="bold" font-size="22" fill="#FFFFFF" text-anchor="middle" font-style="italic">php</text>
+  </g>
+</svg>

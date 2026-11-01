@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Machine learning & AI solutions",
+    "tags": ["Python", "TensorFlow", "OpenCV"],
+    "text": "Designing and deploying CNN, NLP, and OCR models for advanced automation, medical imaging, and text classification systems.",
+    "img": "/img/services/s01.png"
+  },
+  {
+    "title": "Cloud engineering & deployment",
+    "tags": ["AWS Academy", "EC2 / S3", "IAM / Linux"],
+    "text": "Architecting resilient, secure, and scalable cloud solutions following best practices on AWS for real-time logistics and resource monitoring.",
+    "img": "/img/services/s02.png"
+  },
+  {
+    "title": "Full stack web development",
+    "tags": ["PHP / MySQL", "JS / HTML / CSS", "REST APIs"],
+    "text": "Building performant, mobile-first web applications, secure database integrations, and robust CRUD functionalities.",
+    "img": "/img/services/s03.png"
+  },
+  {
+    "title": "Core systems & data structures",
+    "tags": ["Data Structures", "OOPs / DBMS", "Networking"],
+    "text": "Writing highly optimized, clean, and maintainable software based on fundamental object-oriented patterns and efficient data structures.",
+    "img": "/img/services/s04.png"
+  }
+]

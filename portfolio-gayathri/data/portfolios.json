@@ -1,0 +1,42 @@
+[
+  {
+    "src": "/img/works/cotton_ui_screenshot.png",
+    "title": "Multilingual Cotton Leaf Disease Detection System",
+    "description": "Developed a CNN-based smart web application to detect cotton leaf diseases from uploaded images. The system provides multilingual disease information, pesticide recommendations, disease lifecycle details, and text-to-speech voice support in English, Kannada, and Hindi.",
+    "tech": ["Python", "TensorFlow", "OpenCV", "Flask", "gTTS"],
+    "github": null,
+    "live": null
+  },
+  {
+    "src": "/img/works/melanoma_ui_screenshot.png",
+    "title": "Melanoma Stage Detection System",
+    "description": "Built a machine learning-based web application that classifies melanoma stages from skin lesion images using image preprocessing and prediction techniques for early diagnosis support.",
+    "tech": ["Python", "TensorFlow", "Scikit-learn", "OpenCV", "Flask"],
+    "github": null,
+    "live": null
+  },
+  {
+    "src": "/img/works/crop-yield-login.png",
+    "title": "Crop Yield AI – Smart Farming Prediction System",
+    "description": "Developed a Machine Learning based smart farming application that predicts crop yield using agricultural and environmental parameters. The system includes authentication, real-time prediction, data visualization, and multiple machine learning algorithms.",
+    "tech": ["Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "HTML", "CSS"],
+    "github": "#",
+    "live": null
+  },
+  {
+    "src": "/img/works/gift_shop.png",
+    "title": "TinyTreasure – Online Gift Shop Management System",
+    "description": "Developed a complete online gift shopping website with user authentication, product management, shopping cart, checkout, order management, and MySQL database integration.",
+    "tech": ["PHP", "HTML", "CSS", "MySQL", "XAMPP"],
+    "github": "#",
+    "live": null
+  },
+  {
+    "src": "/img/works/resume_checker.jpg",
+    "title": "Resume Eligibility Checker (Mini ATS System)",
+    "description": "Developed a Java Swing desktop application that compares candidate resumes with company job requirements, calculates eligibility scores, identifies missing skills, and supports multiple company selection.",
+    "tech": ["Java", "Java Swing", "OOP", "Collections Framework", "File Handling"],
+    "github": "#",
+    "live": null
+  }
+]

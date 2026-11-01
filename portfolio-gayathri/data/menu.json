@@ -1,0 +1,8 @@
+[
+  { "href": "#home", "caption": "Home", "icon": "ph-bold ph-house-simple" },
+  { "href": "#about", "caption": "About Me", "icon": "ph-bold ph-user" },
+  { "href": "#skills", "caption": "Skills", "icon": "ph-bold ph-code" },
+  { "href": "#certifications", "caption": "Certifications", "icon": "ph-bold ph-certificate" },
+  { "href": "#portfolio", "caption": "Projects", "icon": "ph-bold ph-squares-four" },
+  { "href": "#contact", "caption": "Contact", "icon": "ph-bold ph-envelope" }
+]

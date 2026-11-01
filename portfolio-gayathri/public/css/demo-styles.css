@@ -1,0 +1,8 @@
+@import url("./plugins-demo.css");
+@import url("./main-demo.css");
+html {
+  scroll-behavior: smooth;
+}
+.marquee__inner .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
