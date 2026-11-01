@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffdf5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(255, 253, 245, 0.96);
+    border-bottom: 1px solid #eee3b5;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #6b5b00;
+}
+
+.logo span {
+    color: #d69e00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d69e00;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #fff1a8 0,
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            #ffe28a 0,
+            transparent 25%
+        ),
+        #fffdf5;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    color: #4d4200;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #d69e00;
+}
+
+.hero h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #665d2c;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #d69e00;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #b98200;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid #d69e00;
+    color: #8a6800;
+}
+
+.btn-secondary:hover {
+    background: #fff0b0;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.4rem;
+    color: #4d4200;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+}
+
+.about-container {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-container p {
+    font-size: 1.08rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(180px, 1fr)
+        );
+
+    gap: 18px;
+}
+
+.skill {
+    background: white;
+
+    border: 1px solid #eee3b5;
+
+    border-radius: 18px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #5c510c;
+
+    box-shadow:
+        0 5px 15px
+        rgba(100, 80, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-6px);
+    border-color: #d69e00;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    background: #fff9dc;
+}
+
+.project-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(270px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    border: 1px solid #eee3b5;
+
+    box-shadow:
+        0 8px 20px
+        rgba(100, 80, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card h3 {
+    color: #6b5600;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+
+    background: #fff0b0;
+
+    color: #705600;
+
+    padding: 5px 10px;
+
+    border-radius: 15px;
+
+    font-size: 0.8rem;
+
+    margin: 3px;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education {
+    background: white;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    border-left: 4px solid #d69e00;
+
+    padding:
+        5px 0 25px 25px;
+
+    margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+    color: #5c510c;
+}
+
+.timeline-item span {
+    color: #d69e00;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: #fff9dc;
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-box p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.contact-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #4d4200;
+
+    color: #fff9dc;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        gap: 12px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
