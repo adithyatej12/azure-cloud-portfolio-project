@@ -1,0 +1,109 @@
+.projects__grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
+  gap: 28px;
+}
+
+.project {
+  border-radius: var(--radius-lg);
+  background: var(--glass);
+  border: 1px solid var(--hairline);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(115%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(115%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project__visual {
+  padding: 34px;
+  background: var(--panel-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  transition: background-color .4s var(--ease-out);
+}
+.project__mock { width: 100%; max-width: 300px; height: auto; }
+.project__visual--phone .project__mock { max-width: 176px; }
+
+.project__visual--image {
+  padding: 0;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+.project__visual--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__body {
+  padding: 28px 26px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.project__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.project__code {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  flex: none;
+  transition: color .25s var(--ease-out);
+}
+.project__code svg:last-child { color: var(--ink-faint); }
+.project__code:hover { color: var(--blush); }
+
+.project__body h3 {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 21px;
+}
+.project__body p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+.project__body ul {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--hairline);
+  padding-top: 16px;
+}
+.project__body li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--ink);
+}
+.project__body li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--blush);
+}
+
+@media (max-width: 860px) {
+  .projects__grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,40 @@
+.quotes {
+  position: relative;
+  margin-top: 34px;
+  padding: 22px 22px 20px 46px;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--hairline);
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: background-color .4s var(--ease-out), border-color .4s var(--ease-out);
+}
+
+.quotes__mark {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  font-size: 42px;
+  line-height: 1;
+  color: var(--blush);
+  opacity: 0.55;
+}
+
+.quotes__text {
+  font-size: 14.5px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  animation: quote-in 0.5s var(--ease-out) both;
+}
+
+@keyframes quote-in {
+  from { opacity: 0; transform: translateY(10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quotes__text { animation: none; }
+}
