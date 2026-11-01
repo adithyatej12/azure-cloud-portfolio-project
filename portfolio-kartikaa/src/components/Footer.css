@@ -1,0 +1,21 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding-block: 1.8rem;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+.footer__hand {
+  font-family: var(--font-hand);
+  font-size: 1rem;
+  color: var(--pencil);
+}

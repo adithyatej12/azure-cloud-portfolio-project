@@ -1,0 +1,195 @@
+.project-detail {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem) clamp(4rem, 10vw, 7rem);
+}
+
+.project-detail__topnav {
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.project-detail__back {
+  text-decoration: none;
+}
+
+.project-detail__back-arrow {
+  width: 22px;
+  color: var(--pencil);
+}
+
+.project-detail__head {
+  max-width: 68ch;
+  padding-bottom: clamp(2.5rem, 6vw, 4rem);
+  border-bottom: 1px solid var(--border);
+}
+
+.project-detail__title {
+  margin-top: 0.8rem;
+  font-size: var(--fs-h2);
+}
+
+.project-detail__desc {
+  margin-top: 1.1rem;
+  color: var(--ink-muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  max-width: 60ch;
+}
+
+/* Generous vertical rhythm between sections — nothing crammed together */
+.project-detail__section {
+  padding-block: clamp(2.2rem, 5vw, 3.4rem);
+  border-bottom: 1px solid var(--border);
+}
+.project-detail__section:last-of-type {
+  border-bottom: none;
+}
+
+.project-detail__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+
+.project-detail__heading-doodle {
+  width: 28px;
+  color: var(--pencil);
+}
+
+.project-detail__prose {
+  color: var(--ink-muted);
+  max-width: 68ch;
+  font-size: clamp(1rem, 1.2vw, 1.08rem);
+  line-height: 1.75;
+}
+
+.project-detail__muted {
+  color: var(--ink-muted);
+}
+
+.project-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-detail__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: var(--ink-muted);
+  max-width: 68ch;
+  line-height: 1.6;
+}
+.project-detail__list li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+.project-detail__list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--pencil);
+}
+
+.project-detail__workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  color: var(--ink-muted);
+  max-width: 68ch;
+  counter-reset: step;
+  line-height: 1.65;
+}
+.project-detail__workflow li {
+  position: relative;
+  padding-left: 2.2rem;
+}
+.project-detail__workflow li::before {
+  counter-increment: step;
+  content: counter(step) '.';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Architecture diagram: large, clear, and never upscaled beyond its
+   natural resolution so it stays crisp. */
+.project-detail__architecture {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: clamp(1rem, 3vw, 2rem);
+  display: flex;
+  justify-content: center;
+}
+.project-detail__architecture img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.project-detail__screenshots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 3rem);
+}
+
+.project-detail__screenshot {
+  margin: 0;
+  width: 100%;
+  max-width: 900px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: clamp(1rem, 3vw, 1.6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-detail__screenshot a {
+  display: block;
+  width: 100%;
+  transition: opacity 0.2s ease;
+}
+.project-detail__screenshot a:hover,
+.project-detail__screenshot a:focus-visible {
+  opacity: 0.88;
+}
+.project-detail__screenshot img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+.project-detail__screenshot figcaption {
+  margin-top: 0.9rem;
+  padding-inline: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.project-detail__footnav {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project-detail__notfound {
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+.project-detail__notfound .project-detail__back {
+  margin-top: 1.6rem;
+  display: inline-flex;
+}

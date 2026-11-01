@@ -1,0 +1,43 @@
+:root {
+  /* ---- color: warm charcoal notebook, AWS orange accent ---- */
+  --bg: #0e0f11;
+  --bg-raised: #17181b;
+  --bg-card: #1c1d21;
+  --ink: #f3efe4;              /* warm off-white "paper" text */
+  --ink-muted: #a9a79e;
+  --ink-faint: #6f6d66;
+  --accent: #ff9900;           /* AWS orange */
+  --accent-dim: #cc7a00;
+  --accent-soft: rgba(255, 153, 0, 0.13);
+  --pencil: #8c8a82;           /* graphite doodle stroke */
+  --pencil-soft: rgba(140, 138, 130, 0.5);
+  --border: rgba(243, 239, 228, 0.1);
+  --border-strong: rgba(243, 239, 228, 0.22);
+  --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  /* ---- type ---- */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-hand: 'Kalam', cursive;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', monospace;
+
+  --fs-hero: clamp(2.6rem, 6.5vw, 5.2rem);
+  --fs-h2: clamp(2rem, 4vw, 3.1rem);
+  --fs-h3: clamp(1.3rem, 2.2vw, 1.7rem);
+  --fs-body: clamp(1rem, 1.1vw, 1.1rem);
+  --fs-small: 0.85rem;
+  --fs-hand: clamp(1.05rem, 1.6vw, 1.35rem);
+
+  /* ---- layout ---- */
+  --page-max: 1180px;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --section-space: clamp(4rem, 10vw, 8rem);
+
+  --ease-sketch: cubic-bezier(0.34, 1.1, 0.64, 1);
+}
+
+@media (prefers-color-scheme: light) {
+  /* Dark theme is the intentional primary design per brief; kept as-is regardless of OS scheme. */
+}

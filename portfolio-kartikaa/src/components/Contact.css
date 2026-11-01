@@ -1,0 +1,164 @@
+.contact {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.contact__inner {
+  max-width: 720px;
+}
+
+.contact__heading {
+  position: relative;
+  max-width: 22ch;
+}
+
+.contact__scribble {
+  margin-left: 0.6rem;
+}
+
+.contact__sub {
+  margin-top: 1rem;
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+}
+
+.contact__list {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__item {
+  border-top: 1px solid var(--border);
+}
+.contact__item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.contact__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0.2rem;
+  transition: padding-left 0.2s ease, color 0.2s ease;
+}
+.contact__link:hover {
+  padding-left: 0.6rem;
+  color: var(--accent);
+}
+
+.contact__label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.contact__value {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.contact__connect {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media (max-width: 560px) {
+  .contact__link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}
+.contact__form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 720px;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__field label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.contact__field input,
+.contact__field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.9rem 1rem;
+  font: inherit;
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+  border-color: var(--accent);
+}
+
+.contact__field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+  color: var(--ink-faint);
+}
+
+.contact__submit {
+  align-self: flex-start;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.85rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.contact__submit:hover:not(:disabled) {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.contact__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contact__status {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+
+@media (max-width: 560px) {
+  .contact__form {
+    margin-top: 2.5rem;
+  }
+
+  .contact__submit {
+    width: 100%;
+  }
+}
