@@ -1,0 +1,44 @@
+{
+  "titan-arena": [
+    "/projects/titan-arena/img-1.png",
+    "/projects/titan-arena/img-2.png",
+    "/projects/titan-arena/img-3.png",
+    "/projects/titan-arena/img-4.png",
+    "/projects/titan-arena/img-5.png",
+    "/projects/titan-arena/img-6.png",
+    "/projects/titan-arena/img-7.png",
+    "/projects/titan-arena/img-8.png",
+    "/projects/titan-arena/img-9.png",
+    "/projects/titan-arena/img-10.png",
+    "/projects/titan-arena/img-11.png",
+    "/projects/titan-arena/img-12.png",
+    "/projects/titan-arena/img-13.png",
+    "/projects/titan-arena/img-14.png",
+    "/projects/titan-arena/img-15.png"
+  ],
+  "intrusion-detection-system": [
+    "/projects/intrusion-detection-system/img-1.png",
+    "/projects/intrusion-detection-system/img-2.png",
+    "/projects/intrusion-detection-system/img-3.png"
+  ],
+  "pdf-editor": [
+    "/projects/pdf-editor/img-1.png",
+    "/projects/pdf-editor/img-2.png",
+    "/projects/pdf-editor/img-3.png",
+    "/projects/pdf-editor/img-4.png"
+  ],
+  "lung-cancer-detection": [
+    "/projects/lung-cancer-detection/img-1.png"
+  ],
+  "authcore": [
+    "/projects/authcore/img-1.png"
+  ],
+  "dbt-project-wallet": [
+    "/projects/dbt-project-wallet/img-1.png",
+    "/projects/dbt-project-wallet/img-2.png",
+    "/projects/dbt-project-wallet/img-3.png",
+    "/projects/dbt-project-wallet/img-4.png",
+    "/projects/dbt-project-wallet/img-5.png",
+    "/projects/dbt-project-wallet/img-6.png"
+  ]
+}

@@ -1,0 +1,45 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */4 * * *'
+
+jobs:
+  build-and-test:
+    name: Build & Lint Check
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/portfolio"
+      AUTH_SECRET: "ci-pipeline-build-secret-key-32-chars-long"
+      AUTH_URL: "http://localhost:3000"
+      NEXT_PUBLIC_SITE_URL: "https://portfolio-g8et797i0-govinds-projects-280e0739.vercel.app"
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Fetch GitHub Contributions Data
+        run: node scripts/fetch-contributions.mjs
+        continue-on-error: true
+
+      - name: Generate Prisma Client
+        run: npx prisma generate
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Build Next.js Application
+        run: npx next build

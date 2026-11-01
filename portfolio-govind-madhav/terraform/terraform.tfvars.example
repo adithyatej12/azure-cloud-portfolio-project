@@ -1,0 +1,42 @@
+# Azure Deployment Variables Template
+# Copy this file to `terraform.tfvars` and fill in your actual production values.
+# IMPORTANT: `terraform.tfvars` is git-ignored and contains sensitive secrets!
+
+azure_location      = "eastus"
+resource_group_name = "rg-portfolio-prod"
+environment         = "prod"
+app_name            = "govind-portfolio"
+acr_name            = "acrgovindportfolio" # Must be unique alphanumeric string
+
+# Container Image Reference
+container_image     = "acrgovindportfolio.azurecr.io/portfolio:latest"
+
+# Compute Allocation
+cpu_reservation    = 0.5
+memory_reservation = "1.0Gi"
+
+# ── Secrets (Required) ───────────────────────────────────────────
+
+# Your Neon PostgreSQL connection string (pooled recommended)
+database_url = "postgresql://user:password@ep-sample-123456.us-east-2.aws.neon.tech/neondb?sslmode=require"
+
+# NextAuth secret key (generate with `openssl rand -base64 32` or similar)
+auth_secret = "your-secure-32-byte-random-auth-secret-string"
+
+# Visitor IP hashing salt
+fingerprint_salt = "your-random-secure-fingerprint-salt-string"
+
+# ── Optional Configuration ───────────────────────────────────────
+
+# Custom domain (leave empty to use default *.azurecontainerapps.io domain)
+auth_url             = ""
+next_public_site_url = ""
+
+# External API Integrations (Optional)
+resend_api_key    = ""
+uploadthing_token = ""
+github_token      = ""
+
+contact_email_to   = "recipient@example.com"
+contact_email_from = "Portfolio <onboarding@resend.dev>"
+blog_email_from    = "Portfolio <updates@yourverifieddomain.com>"
