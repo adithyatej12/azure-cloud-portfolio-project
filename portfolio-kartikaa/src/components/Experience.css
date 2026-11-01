@@ -1,0 +1,84 @@
+.experience__head {
+  max-width: 40ch;
+}
+
+.experience__timeline {
+  position: relative;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-left: clamp(2rem, 5vw, 3.5rem);
+}
+
+/* hand-drawn vertical line made of a tiled wavy SVG, rather than a straight border */
+.experience__timeline::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 6px;
+  width: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='40' viewBox='0 0 10 40'%3E%3Cpath d='M5 0c3 4 -2 8 1 12s -3 8 0 12 -3 8 0 16' stroke='%236f6d66' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-size: 10px 40px;
+  opacity: 0.7;
+}
+
+.experience__item {
+  position: relative;
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+}
+.experience__item:last-child {
+  padding-bottom: 0;
+}
+
+.experience__dot {
+  position: absolute;
+  left: calc(clamp(2rem, 5vw, 3.5rem) * -1 + 1px);
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.experience__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem 1rem;
+}
+
+.experience__role {
+  font-size: var(--fs-h3);
+}
+
+.experience__period {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.experience__company {
+  color: var(--accent);
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+
+.experience__points {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  color: var(--ink-muted);
+  max-width: 62ch;
+}
+.experience__points li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+.experience__points li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--pencil);
+}

@@ -1,0 +1,79 @@
+.publication__head {
+  max-width: 40ch;
+}
+
+.publication__paper {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: clamp(1.8rem, 4vw, 3rem);
+  max-width: 780px;
+}
+
+.publication__journal {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.03em;
+}
+
+.publication__title {
+  margin-top: 0.9rem;
+  font-size: var(--fs-h3);
+  max-width: 48ch;
+}
+
+.publication__authors {
+  margin-top: 0.8rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.publication__desc {
+  margin-top: 1.3rem;
+  color: var(--ink-muted);
+  max-width: 60ch;
+}
+
+.publication__concepts {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-family: var(--font-hand);
+  font-size: var(--fs-hand);
+  color: var(--ink);
+}
+
+.publication__concept {
+  position: relative;
+  padding: 0.1rem 0.3rem;
+}
+
+.publication__circle {
+  position: absolute;
+  top: -34%;
+  left: -18%;
+  width: 140%;
+  height: 220%;
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.publication__connector {
+  width: 46px;
+  color: var(--pencil);
+  margin: 0 0.1rem;
+}
+
+@media (max-width: 520px) {
+  .publication__connector {
+    display: none;
+  }
+  .publication__concepts {
+    gap: 0.9rem 0.6rem;
+  }
+}

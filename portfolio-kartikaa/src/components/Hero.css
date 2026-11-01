@@ -1,0 +1,116 @@
+.hero {
+  padding-block: clamp(3rem, 8vw, 6rem) clamp(2rem, 6vw, 4rem);
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.hero__title {
+  font-size: var(--fs-hero);
+  margin-top: 0.75rem;
+  max-width: 14ch;
+}
+
+.hero__sub {
+  margin-top: 1.5rem;
+  max-width: 46ch;
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2.2rem;
+}
+
+.hero__art {
+  position: relative;
+  min-height: 340px;
+  color: var(--ink);
+}
+
+.hero__cloud {
+  width: min(75%, 300px);
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  color: var(--ink);
+}
+
+.hero__server {
+  width: min(40%, 150px);
+  position: absolute;
+  bottom: 4%;
+  left: 6%;
+  color: var(--accent);
+}
+
+.hero__arrow {
+  width: 60px;
+  position: absolute;
+  top: 42%;
+  left: 40%;
+  color: var(--pencil);
+}
+
+.hero__star {
+  width: 22px;
+  position: absolute;
+  color: var(--accent);
+}
+.hero__star--a {
+  top: 2%;
+  left: 10%;
+}
+.hero__star--b {
+  bottom: 30%;
+  right: 8%;
+  width: 16px;
+}
+
+.hero__note {
+  position: absolute;
+  white-space: nowrap;
+}
+.hero__note--deploy {
+  top: 18%;
+  left: 0%;
+}
+.hero__note--cloudstuff {
+  bottom: 20%;
+  right: 2%;
+}
+.hero__note--building {
+  bottom: -6%;
+  left: 22%;
+}
+
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .hero__art {
+    min-height: 260px;
+    order: -1;
+  }
+  .hero__note {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero__ctas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
