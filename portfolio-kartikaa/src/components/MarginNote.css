@@ -1,0 +1,8 @@
+.margin-note {
+  display: inline-block;
+  font-family: var(--font-hand);
+  font-size: var(--fs-hand);
+  color: var(--accent);
+  transform: rotate(var(--rotate, -3deg));
+  line-height: 1;
+}
